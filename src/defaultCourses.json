@@ -1,0 +1,5707 @@
+[
+  {
+    "id": "course-1",
+    "name": "上午题—计算机系统（5~6分）",
+    "videos": [
+      {
+        "id": "video-1-1",
+        "title": "1. 讲解形式",
+        "duration": 121,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-2",
+        "title": "2. CPU",
+        "duration": 251,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-3",
+        "title": "3. 运算器",
+        "duration": 404,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=3",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-4",
+        "title": "4. 控制器",
+        "duration": 730,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=4",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-5",
+        "title": "20. 计算机基本单位",
+        "duration": 300,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=20",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-6",
+        "title": "21. 十进制与二进制",
+        "duration": 814,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=21",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-7",
+        "title": "22. 八进制与十六进制",
+        "duration": 362,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=22",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-8",
+        "title": "23. 八进制转二进制与十六进制转二进制",
+        "duration": 581,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=23",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-9",
+        "title": "24. 进制加减法",
+        "duration": 740,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=24",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-10",
+        "title": "36. 原码与反码",
+        "duration": 597,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=36",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-11",
+        "title": "37. 补码和移码",
+        "duration": 604,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=37",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-12",
+        "title": "38. 补码特性与原、反、补、移码表示范围",
+        "duration": 629,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=38",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-13",
+        "title": "46. 浮点数",
+        "duration": 713,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=46",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-14",
+        "title": "47. 规格化浮点数",
+        "duration": 550,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=47",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-15",
+        "title": "57. 寻址",
+        "duration": 419,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=57",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-16",
+        "title": "64. 奇偶校验码",
+        "duration": 496,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=64",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-17",
+        "title": "65. 海明码",
+        "duration": 181,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=65",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-18",
+        "title": "66. 循环冗余校验码",
+        "duration": 105,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=66",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-19",
+        "title": "77. RISC与CISC",
+        "duration": 224,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=77",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-20",
+        "title": "84. 流水线公式",
+        "duration": 641,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=84",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-21",
+        "title": "85. 流水线概念",
+        "duration": 391,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=85",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-22",
+        "title": "96. 存储器",
+        "duration": 435,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=96",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-23",
+        "title": "106. Cache",
+        "duration": 317,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=106",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-24",
+        "title": "107. Cache地址映像",
+        "duration": 426,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=107",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-25",
+        "title": "119. 中断",
+        "duration": 429,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=119",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-26",
+        "title": "127. 输入输出（IO）控制方式",
+        "duration": 127,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=127",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-27",
+        "title": "128. 程序查询方式",
+        "duration": 300,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=128",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-28",
+        "title": "129. 中断驱动方式",
+        "duration": 297,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=129",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-29",
+        "title": "130. DMA方式",
+        "duration": 229,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=130",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-30",
+        "title": "142. 总线",
+        "duration": 190,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=142",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-31",
+        "title": "152. 加密技术与认证技术",
+        "duration": 230,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=152",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-32",
+        "title": "153. 对称加密与非对称加密",
+        "duration": 906,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=153",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-33",
+        "title": "154. 摘要与数字签名",
+        "duration": 594,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=154",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-34",
+        "title": "155. 数字证书",
+        "duration": 460,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=155",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-35",
+        "title": "169. 加密算法",
+        "duration": 104,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=169",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-36",
+        "title": "180. 可靠性公式",
+        "duration": 106,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=180",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-37",
+        "title": "187. 杂题选讲",
+        "duration": 31,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=187",
+        "status": "idle"
+      },
+      {
+        "id": "video-1-38",
+        "title": "200. 计算机系统总结",
+        "duration": 192,
+        "url": "https://www.bilibili.com/video/BV1ym4y1D7RW/?p=200",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-2",
+    "name": "上午题—程序设计语言（固定6分）",
+    "videos": [
+      {
+        "id": "video-2-1",
+        "title": "讲解形式",
+        "duration": 57,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-2",
+        "title": "编译程序和解释程序",
+        "duration": 653,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-3",
+        "title": "程序设计语言基本成分",
+        "duration": 178,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=8",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-4",
+        "title": "传值调用与传地址调用",
+        "duration": 402,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=20",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-5",
+        "title": "代码简单实现",
+        "duration": 652,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=21",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-6",
+        "title": "编译、解释程序翻译阶段",
+        "duration": 233,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=38",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-7",
+        "title": "符号表",
+        "duration": 62,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=43",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-8",
+        "title": "词法分析",
+        "duration": 476,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=48",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-9",
+        "title": "语法分析",
+        "duration": 232,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=49",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-10",
+        "title": "语义分析",
+        "duration": 395,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=50",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-11",
+        "title": "目标代码生成",
+        "duration": 131,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=51",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-12",
+        "title": "动态的语义错误",
+        "duration": 189,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=64",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-13",
+        "title": "中间代码生成",
+        "duration": 104,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=70",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-14",
+        "title": "正规式",
+        "duration": 421,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=77",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-15",
+        "title": "有限自动机",
+        "duration": 699,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=83",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-16",
+        "title": "上下文无关文法",
+        "duration": 374,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=104",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-17",
+        "title": "中缀、后缀表达式转换",
+        "duration": 784,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=114",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-18",
+        "title": "语法树中、后序遍历",
+        "duration": 666,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=115",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-19",
+        "title": "杂题选讲",
+        "duration": 117,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=131",
+        "status": "idle"
+      },
+      {
+        "id": "video-2-20",
+        "title": "程序设计语言总结",
+        "duration": 116,
+        "url": "https://www.bilibili.com/video/BV1tL411c7gi/?p=159",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-3",
+    "name": "下午题—试题一（15分）",
+    "videos": [
+      {
+        "id": "video-3-1",
+        "title": "讲解形式",
+        "duration": 383,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-2",
+        "title": "题目形式介绍",
+        "duration": 260,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-3",
+        "title": "数据流图基本图形元素",
+        "duration": 750,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=3",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-4",
+        "title": "外部实体",
+        "duration": 164,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=4",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-5",
+        "title": "数据存储",
+        "duration": 210,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=5",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-6",
+        "title": "加工",
+        "duration": 226,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=6",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-7",
+        "title": "数据流",
+        "duration": 230,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=7",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-8",
+        "title": "问题一介绍",
+        "duration": 573,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=8",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-9",
+        "title": "例题一 2011年上半年问题1",
+        "duration": 814,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=9",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-10",
+        "title": "例题二 2014年上半年问题1",
+        "duration": 585,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=10",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-11",
+        "title": "例题三 2014年下半年问题1",
+        "duration": 470,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=11",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-12",
+        "title": "问题二介绍",
+        "duration": 617,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=12",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-13",
+        "title": "例题一 2011年上半年问题2",
+        "duration": 644,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=13",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-14",
+        "title": "例题二 2014年上半年问题2",
+        "duration": 412,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=14",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-15",
+        "title": "例题三 2014年下半年问题2",
+        "duration": 671,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=15",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-16",
+        "title": "问题三介绍",
+        "duration": 298,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=16",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-17",
+        "title": "方法一 父图子图平衡",
+        "duration": 538,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=17",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-18",
+        "title": "方法二 加工既有输入数据流也有输出数据流",
+        "duration": 441,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=18",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-19",
+        "title": "方法三 数据守恒",
+        "duration": 514,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=19",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-20",
+        "title": "答题格式和注意事项",
+        "duration": 429,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=20",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-21",
+        "title": "例题一 2011年上半年问题3",
+        "duration": 1506,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=21",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-22",
+        "title": "例题二 2014年上半年问题3",
+        "duration": 1014,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=22",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-23",
+        "title": "例题三 2014年下半年问题3",
+        "duration": 1289,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=23",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-24",
+        "title": "内容回顾",
+        "duration": 305,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=24",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-25",
+        "title": "2011年上半年问题1",
+        "duration": 440,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=25",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-26",
+        "title": "2011年上半年问题2",
+        "duration": 463,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=26",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-27",
+        "title": "2011年上半年问题3",
+        "duration": 1102,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=27",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-28",
+        "title": "2011年上半年问题4",
+        "duration": 163,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=28",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-29",
+        "title": "2014年上半年问题1",
+        "duration": 504,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=29",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-30",
+        "title": "2014年上半年问题2",
+        "duration": 336,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=30",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-31",
+        "title": "2014年上半年问题3",
+        "duration": 257,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=31",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-32",
+        "title": "2014年上半年问题4",
+        "duration": 570,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=32",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-33",
+        "title": "数据存储输入输出讨论",
+        "duration": 196,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=33",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-34",
+        "title": "2014年下半年问题1",
+        "duration": 269,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=34",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-35",
+        "title": "2014年下半年问题2",
+        "duration": 470,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=35",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-36",
+        "title": "2014年下半年问题3",
+        "duration": 986,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=36",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-37",
+        "title": "2015年上半年问题1",
+        "duration": 278,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=37",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-38",
+        "title": "2015年上半年问题2",
+        "duration": 325,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=38",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-39",
+        "title": "2015年上半年问题3",
+        "duration": 484,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=39",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-40",
+        "title": "2015年上半年问题4",
+        "duration": 433,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=40",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-41",
+        "title": "2015年下半年问题1",
+        "duration": 445,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=41",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-42",
+        "title": "2015年下半年问题2",
+        "duration": 564,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=42",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-43",
+        "title": "2015年下半年问题3",
+        "duration": 809,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=43",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-44",
+        "title": "2015年下半年问题4",
+        "duration": 399,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=44",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-45",
+        "title": "问题3讲解变动",
+        "duration": 124,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=45",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-46",
+        "title": "2016年上半年问题1",
+        "duration": 425,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=46",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-47",
+        "title": "2016年上半年问题2",
+        "duration": 407,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=47",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-48",
+        "title": "2016年上半年问题3",
+        "duration": 1689,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=48",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-49",
+        "title": "2016年上半年问题4",
+        "duration": 292,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=49",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-50",
+        "title": "2016年下半年问题1",
+        "duration": 260,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=50",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-51",
+        "title": "2016年下半年问题2",
+        "duration": 124,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=51",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-52",
+        "title": "2016年下半年问题3",
+        "duration": 467,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=52",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-53",
+        "title": "2016年下半年问题4",
+        "duration": 316,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=53",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-54",
+        "title": "2017年上半年问题1",
+        "duration": 347,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=54",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-55",
+        "title": "2017年上半年问题2",
+        "duration": 410,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=55",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-56",
+        "title": "2017年上半年问题3",
+        "duration": 872,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=56",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-57",
+        "title": "2017年上半年问题4",
+        "duration": 319,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=57",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-58",
+        "title": "2017年下半年问题1",
+        "duration": 373,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=58",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-59",
+        "title": "2017年下半年问题2",
+        "duration": 521,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=59",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-60",
+        "title": "2017年下半年问题3",
+        "duration": 1266,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=60",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-61",
+        "title": "2017年下半年问题4",
+        "duration": 247,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=61",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-62",
+        "title": "2018年上半年问题1",
+        "duration": 235,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=62",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-63",
+        "title": "2018年上半年问题2",
+        "duration": 390,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=63",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-64",
+        "title": "2018年上半年问题3",
+        "duration": 872,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=64",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-65",
+        "title": "2018年上半年问题4",
+        "duration": 567,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=65",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-66",
+        "title": "2018年下半年问题1",
+        "duration": 412,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=66",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-67",
+        "title": "2018年下半年问题2",
+        "duration": 395,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=67",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-68",
+        "title": "2018年下半年问题3",
+        "duration": 780,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=68",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-69",
+        "title": "2018年下半年问题4",
+        "duration": 187,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=69",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-70",
+        "title": "2019年上半年问题1",
+        "duration": 543,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=70",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-71",
+        "title": "2019年上半年问题2",
+        "duration": 448,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=71",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-72",
+        "title": "2019年上半年问题3",
+        "duration": 1212,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=72",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-73",
+        "title": "2019年上半年问题4",
+        "duration": 406,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=73",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-74",
+        "title": "2019年上半年问题4补充",
+        "duration": 124,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=74",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-75",
+        "title": "2019年下半年问题1",
+        "duration": 360,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=75",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-76",
+        "title": "2019年下半年问题2",
+        "duration": 356,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=76",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-77",
+        "title": "2019年下半年问题3",
+        "duration": 814,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=77",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-78",
+        "title": "2019年下半年问题4",
+        "duration": 866,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=78",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-79",
+        "title": "2020年下半年问题1",
+        "duration": 279,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=79",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-80",
+        "title": "2020年下半年问题2",
+        "duration": 391,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=80",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-81",
+        "title": "2020年下半年问题3",
+        "duration": 816,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=81",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-82",
+        "title": "2020年下半年问题4",
+        "duration": 358,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=82",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-83",
+        "title": "2021年上半年问题1",
+        "duration": 681,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=83",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-84",
+        "title": "2021年上半年问题2",
+        "duration": 419,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=84",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-85",
+        "title": "2021年上半年问题3",
+        "duration": 1198,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=85",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-86",
+        "title": "2021年上半年问题4",
+        "duration": 398,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=86",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-87",
+        "title": "2021年下半年问题1",
+        "duration": 322,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=87",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-88",
+        "title": "2021年下半年问题2",
+        "duration": 262,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=88",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-89",
+        "title": "2021年下半年问题3",
+        "duration": 906,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=89",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-90",
+        "title": "2021年下半年问题4",
+        "duration": 453,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=90",
+        "status": "idle"
+      },
+      {
+        "id": "video-3-91",
+        "title": "试题一总结",
+        "duration": 669,
+        "url": "https://www.bilibili.com/video/BV1ai4y1f7ot/?p=91",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-4",
+    "name": "上午题—知识产权（2~3分）",
+    "videos": [
+      {
+        "id": "video-4-1",
+        "title": "讲解形式",
+        "duration": 145,
+        "url": "https://www.bilibili.com/video/BV1Qr4y167cX/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-4-2",
+        "title": "著作权",
+        "duration": 293,
+        "url": "https://www.bilibili.com/video/BV1Qr4y167cX/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-4-3",
+        "title": "专利地域性",
+        "duration": 126,
+        "url": "https://www.bilibili.com/video/BV1Qr4y167cX/?p=6",
+        "status": "idle"
+      },
+      {
+        "id": "video-4-4",
+        "title": "计算机软件著作权",
+        "duration": 499,
+        "url": "https://www.bilibili.com/video/BV1Qr4y167cX/?p=9",
+        "status": "idle"
+      },
+      {
+        "id": "video-4-5",
+        "title": "职务作品",
+        "duration": 333,
+        "url": "https://www.bilibili.com/video/BV1Qr4y167cX/?p=16",
+        "status": "idle"
+      },
+      {
+        "id": "video-4-6",
+        "title": "委托开发",
+        "duration": 188,
+        "url": "https://www.bilibili.com/video/BV1Qr4y167cX/?p=28",
+        "status": "idle"
+      },
+      {
+        "id": "video-4-7",
+        "title": "计算机软件著作权侵权",
+        "duration": 210,
+        "url": "https://www.bilibili.com/video/BV1Qr4y167cX/?p=34",
+        "status": "idle"
+      },
+      {
+        "id": "video-4-8",
+        "title": "商业秘密权",
+        "duration": 109,
+        "url": "https://www.bilibili.com/video/BV1Qr4y167cX/?p=41",
+        "status": "idle"
+      },
+      {
+        "id": "video-4-9",
+        "title": "专利权申请",
+        "duration": 164,
+        "url": "https://www.bilibili.com/video/BV1Qr4y167cX/?p=45",
+        "status": "idle"
+      },
+      {
+        "id": "video-4-10",
+        "title": "商标权",
+        "duration": 96,
+        "url": "https://www.bilibili.com/video/BV1Qr4y167cX/?p=51",
+        "status": "idle"
+      },
+      {
+        "id": "video-4-11",
+        "title": "商标注册",
+        "duration": 102,
+        "url": "https://www.bilibili.com/video/BV1Qr4y167cX/?p=56",
+        "status": "idle"
+      },
+      {
+        "id": "video-4-12",
+        "title": "杂题选讲",
+        "duration": 22,
+        "url": "https://www.bilibili.com/video/BV1Qr4y167cX/?p=61",
+        "status": "idle"
+      },
+      {
+        "id": "video-4-13",
+        "title": "知识产权总结",
+        "duration": 89,
+        "url": "https://www.bilibili.com/video/BV1Qr4y167cX/?p=72",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-5",
+    "name": "上午题—数据库（固定6分）",
+    "videos": [
+      {
+        "id": "video-5-1",
+        "title": "讲解形式",
+        "duration": 165,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-2",
+        "title": "概念数据模型",
+        "duration": 812,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-3",
+        "title": "结构数据模型",
+        "duration": 356,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=3",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-4",
+        "title": "三级模式结构",
+        "duration": 254,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=5",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-5",
+        "title": "两级映像",
+        "duration": 250,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=8",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-6",
+        "title": "关系模式基本术语",
+        "duration": 1044,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=11",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-7",
+        "title": "完整性约束",
+        "duration": 562,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=12",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-8",
+        "title": "并、差、交、笛卡儿积",
+        "duration": 567,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=13",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-9",
+        "title": "投影、选择",
+        "duration": 923,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=14",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-10",
+        "title": "θ连接和等值连接",
+        "duration": 584,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=15",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-11",
+        "title": "自然连接",
+        "duration": 1076,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=16",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-12",
+        "title": "左外连接、右外连接、全外连接",
+        "duration": 781,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=17",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-13",
+        "title": "除",
+        "duration": 207,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=18",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-14",
+        "title": "投影、选择转SQL语言",
+        "duration": 990,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=31",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-15",
+        "title": "笛卡尔积转SQL语言",
+        "duration": 695,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=32",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-16",
+        "title": "自然连接转SQL语言",
+        "duration": 520,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=33",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-17",
+        "title": "数据定义语言",
+        "duration": 698,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=39",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-18",
+        "title": "列级、表级完整性约束",
+        "duration": 727,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=40",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-19",
+        "title": "数据操作语言",
+        "duration": 1145,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=41",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-20",
+        "title": "数据查询语言",
+        "duration": 384,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=42",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-21",
+        "title": "投影查询",
+        "duration": 546,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=43",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-22",
+        "title": "选择查询",
+        "duration": 869,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=44",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-23",
+        "title": "排序查询",
+        "duration": 341,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=45",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-24",
+        "title": "聚合函数",
+        "duration": 888,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=46",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-25",
+        "title": "数据分组",
+        "duration": 1360,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=47",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-26",
+        "title": "内连接",
+        "duration": 1062,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=48",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-27",
+        "title": "外连接",
+        "duration": 370,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=49",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-28",
+        "title": "一般子查询",
+        "duration": 1129,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=50",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-29",
+        "title": "相关子查询和EXISTS子查询",
+        "duration": 782,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=51",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-30",
+        "title": "查询结果并、交、差运算",
+        "duration": 363,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=52",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-31",
+        "title": "SQL控制语句",
+        "duration": 501,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=58",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-32",
+        "title": "视图",
+        "duration": 663,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=62",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-33",
+        "title": "索引",
+        "duration": 422,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=65",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-34",
+        "title": "关系模式",
+        "duration": 410,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=68",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-35",
+        "title": "函数依赖",
+        "duration": 1006,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=69",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-36",
+        "title": "码和推理规则",
+        "duration": 751,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=70",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-37",
+        "title": "属性闭包计算",
+        "duration": 924,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=71",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-38",
+        "title": "第一范式",
+        "duration": 456,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=83",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-39",
+        "title": "部分函数依赖导致数据冗余、更新异常",
+        "duration": 627,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=84",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-40",
+        "title": "第二范式",
+        "duration": 413,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=85",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-41",
+        "title": "关系模式分解消除部分函数依赖",
+        "duration": 726,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=86",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-42",
+        "title": "传递函数依赖导致数据冗余、更新异常",
+        "duration": 829,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=87",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-43",
+        "title": "第三范式和消除传递函数依赖",
+        "duration": 701,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=88",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-44",
+        "title": "第三范式存在的问题和BC范式",
+        "duration": 926,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=89",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-45",
+        "title": "消除主属性对候选码的部分、传递函数依赖",
+        "duration": 881,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=90",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-46",
+        "title": "第四范式",
+        "duration": 346,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=91",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-47",
+        "title": "范式总结",
+        "duration": 360,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=92",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-48",
+        "title": "判断部分函数依赖技巧",
+        "duration": 422,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=93",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-49",
+        "title": "判断传递函数依赖技巧",
+        "duration": 827,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=94",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-50",
+        "title": "关系分解",
+        "duration": 84,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=101",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-51",
+        "title": "无损连接和保持函数依赖",
+        "duration": 479,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=105",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-52",
+        "title": "数据库设计",
+        "duration": 445,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=109",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-53",
+        "title": "需求分析阶段",
+        "duration": 331,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=110",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-54",
+        "title": "E-R图实体、联系",
+        "duration": 1036,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=111",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-55",
+        "title": "E-R图属性",
+        "duration": 505,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=112",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-56",
+        "title": "E-R图设计和弱实体",
+        "duration": 537,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=115",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-57",
+        "title": "概念结构设计阶段",
+        "duration": 1173,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=116",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-58",
+        "title": "逻辑结构设计",
+        "duration": 1451,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=119",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-59",
+        "title": "物理设计阶段和实施与维护",
+        "duration": 103,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=125",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-60",
+        "title": "事务管理",
+        "duration": 135,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=129",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-61",
+        "title": "数据库备份与恢复",
+        "duration": 397,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=132",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-62",
+        "title": "封锁",
+        "duration": 139,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=136",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-63",
+        "title": "分布式数据库",
+        "duration": 90,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=139",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-64",
+        "title": "杂题选讲",
+        "duration": 37,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=145",
+        "status": "idle"
+      },
+      {
+        "id": "video-5-65",
+        "title": "数据库总结",
+        "duration": 213,
+        "url": "https://www.bilibili.com/video/BV1LZ4y1k7ma/?p=154",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-6",
+    "name": "下午题—试题二（15分）",
+    "videos": [
+      {
+        "id": "video-6-1",
+        "title": "讲解形式",
+        "duration": 310,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-2",
+        "title": "题目形式介绍",
+        "duration": 351,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-3",
+        "title": "E-R图基本图形元素",
+        "duration": 286,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=3",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-4",
+        "title": "实体",
+        "duration": 588,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=4",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-5",
+        "title": "属性",
+        "duration": 462,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=5",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-6",
+        "title": "两个实体之间的联系",
+        "duration": 1297,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=6",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-7",
+        "title": "三个实体之间的联系",
+        "duration": 372,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=7",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-8",
+        "title": "问题1介绍",
+        "duration": 389,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=8",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-9",
+        "title": "例题1 2011年下半年问题1",
+        "duration": 754,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=9",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-10",
+        "title": "例题2 2014年下半年问题1",
+        "duration": 380,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=10",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-11",
+        "title": "例题3 2018年下半年问题1",
+        "duration": 407,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=11",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-12",
+        "title": "关系模式和主键外键",
+        "duration": 923,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=12",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-13",
+        "title": "一对一联系转换",
+        "duration": 612,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=13",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-14",
+        "title": "一对多联系转换",
+        "duration": 356,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=14",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-15",
+        "title": "多对多联系转换",
+        "duration": 313,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=15",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-16",
+        "title": "三个实体的联系转换",
+        "duration": 205,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=16",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-17",
+        "title": "实体和子实体的转换关系模式",
+        "duration": 239,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=17",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-18",
+        "title": "问题2介绍",
+        "duration": 301,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=18",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-19",
+        "title": "例题1 2011年下半年问题2",
+        "duration": 928,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=19",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-20",
+        "title": "例题2 2014年下半年问题2",
+        "duration": 1032,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=20",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-21",
+        "title": "例题3 2018年下半年问题2",
+        "duration": 666,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=21",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-22",
+        "title": "2009年下半年问题1",
+        "duration": 257,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=22",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-23",
+        "title": "2009年下半年问题2",
+        "duration": 480,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=23",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-24",
+        "title": "2009年下半年问题3",
+        "duration": 674,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=24",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-25",
+        "title": "2011年下半年问题1",
+        "duration": 398,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=25",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-26",
+        "title": "2011年下半年问题2",
+        "duration": 724,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=26",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-27",
+        "title": "2011年下半年问题3",
+        "duration": 379,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=27",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-28",
+        "title": "2013年上半年问题1",
+        "duration": 284,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=28",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-29",
+        "title": "2013年上半年问题2",
+        "duration": 680,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=29",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-30",
+        "title": "2013年上半年问题3",
+        "duration": 173,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=30",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-31",
+        "title": "内容回顾",
+        "duration": 521,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=31",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-32",
+        "title": "2013年下半年问题1",
+        "duration": 534,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=32",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-33",
+        "title": "2013年下半年问题2",
+        "duration": 720,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=33",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-34",
+        "title": "2013年下半年问题3",
+        "duration": 390,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=34",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-35",
+        "title": "2014年上半年问题1",
+        "duration": 262,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=35",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-36",
+        "title": "2014年上半年问题2",
+        "duration": 419,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=36",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-37",
+        "title": "2014年上半年问题3",
+        "duration": 261,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=37",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-38",
+        "title": "2014年下半年问题1",
+        "duration": 257,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=38",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-39",
+        "title": "2014年下半年问题2",
+        "duration": 630,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=39",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-40",
+        "title": "2014年下半年问题3",
+        "duration": 441,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=40",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-41",
+        "title": "2015年上半年问题1",
+        "duration": 220,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=41",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-42",
+        "title": "2015年上半年问题2",
+        "duration": 138,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=42",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-43",
+        "title": "2015年上半年问题3",
+        "duration": 326,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=43",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-44",
+        "title": "2015年下半年问题1",
+        "duration": 293,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=44",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-45",
+        "title": "2015年下半年问题2",
+        "duration": 806,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=45",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-46",
+        "title": "2015年下半年问题3",
+        "duration": 516,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=46",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-47",
+        "title": "2016年上半年问题1",
+        "duration": 706,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=47",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-48",
+        "title": "2016年上半年问题2",
+        "duration": 309,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=48",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-49",
+        "title": "2016年上半年问题3",
+        "duration": 518,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=49",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-50",
+        "title": "2016年下半年问题1",
+        "duration": 301,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=50",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-51",
+        "title": "2016年下半年问题2",
+        "duration": 584,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=51",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-52",
+        "title": "2016年下半年问题3",
+        "duration": 1211,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=52",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-53",
+        "title": "2017年上半年问题1",
+        "duration": 262,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=53",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-54",
+        "title": "2017年上半年问题2",
+        "duration": 277,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=54",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-55",
+        "title": "2017年上半年问题3",
+        "duration": 556,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=55",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-56",
+        "title": "2017年下半年问题1",
+        "duration": 321,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=56",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-57",
+        "title": "2017年下半年问题2",
+        "duration": 410,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=57",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-58",
+        "title": "2017年下半年问题3",
+        "duration": 377,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=58",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-59",
+        "title": "2017年下半年问题4",
+        "duration": 415,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=59",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-60",
+        "title": "2018年上半年问题1",
+        "duration": 506,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=60",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-61",
+        "title": "2018年上半年问题2",
+        "duration": 396,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=61",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-62",
+        "title": "2018年上半年问题3",
+        "duration": 629,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=62",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-63",
+        "title": "2018年下半年问题1",
+        "duration": 256,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=63",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-64",
+        "title": "2018年下半年问题2",
+        "duration": 378,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=64",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-65",
+        "title": "2018年下半年问题3",
+        "duration": 159,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=65",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-66",
+        "title": "2018年下半年问题4",
+        "duration": 318,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=66",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-67",
+        "title": "2019年上半年问题1",
+        "duration": 197,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=67",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-68",
+        "title": "2019年上半年问题2",
+        "duration": 497,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=68",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-69",
+        "title": "2019年上半年问题3",
+        "duration": 298,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=69",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-70",
+        "title": "2019年下半年问题1",
+        "duration": 333,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=70",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-71",
+        "title": "2019年下半年问题2",
+        "duration": 259,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=71",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-72",
+        "title": "2019年下半年问题3",
+        "duration": 236,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=72",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-73",
+        "title": "2019年下半年问题4",
+        "duration": 379,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=73",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-74",
+        "title": "2020年下半年问题1",
+        "duration": 286,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=74",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-75",
+        "title": "2020年下半年问题2",
+        "duration": 359,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=75",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-76",
+        "title": "2020年下半年问题3",
+        "duration": 164,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=76",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-77",
+        "title": "2020年下半年问题4",
+        "duration": 1029,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=77",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-78",
+        "title": "2021年上半年问题1",
+        "duration": 278,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=78",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-79",
+        "title": "2021年上半年问题2",
+        "duration": 463,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=79",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-80",
+        "title": "2021年上半年问题3",
+        "duration": 275,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=80",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-81",
+        "title": "2021年下半年问题1",
+        "duration": 243,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=81",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-82",
+        "title": "2021年下半年问题2",
+        "duration": 357,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=82",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-83",
+        "title": "2021年下半年问题3",
+        "duration": 163,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=83",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-84",
+        "title": "2021年下半年问题4",
+        "duration": 257,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=84",
+        "status": "idle"
+      },
+      {
+        "id": "video-6-85",
+        "title": "试题二总结",
+        "duration": 294,
+        "url": "https://www.bilibili.com/video/BV1x34y1k7ZE/?p=85",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-7",
+    "name": "上午题—面向对象（3~4分）",
+    "videos": [
+      {
+        "id": "video-7-1",
+        "title": "讲解形式",
+        "duration": 175,
+        "url": "https://www.bilibili.com/video/BV1QU4y1o7MS/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-7-2",
+        "title": "面向过程和面向对象",
+        "duration": 456,
+        "url": "https://www.bilibili.com/video/BV1QU4y1o7MS/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-7-3",
+        "title": "类",
+        "duration": 705,
+        "url": "https://www.bilibili.com/video/BV1QU4y1o7MS/?p=3",
+        "status": "idle"
+      },
+      {
+        "id": "video-7-4",
+        "title": "对象",
+        "duration": 355,
+        "url": "https://www.bilibili.com/video/BV1QU4y1o7MS/?p=8",
+        "status": "idle"
+      },
+      {
+        "id": "video-7-5",
+        "title": "消息",
+        "duration": 316,
+        "url": "https://www.bilibili.com/video/BV1QU4y1o7MS/?p=9",
+        "status": "idle"
+      },
+      {
+        "id": "video-7-6",
+        "title": "方法重载",
+        "duration": 464,
+        "url": "https://www.bilibili.com/video/BV1QU4y1o7MS/?p=14",
+        "status": "idle"
+      },
+      {
+        "id": "video-7-7",
+        "title": "封装",
+        "duration": 981,
+        "url": "https://www.bilibili.com/video/BV1QU4y1o7MS/?p=17",
+        "status": "idle"
+      },
+      {
+        "id": "video-7-8",
+        "title": "继承",
+        "duration": 694,
+        "url": "https://www.bilibili.com/video/BV1QU4y1o7MS/?p=25",
+        "status": "idle"
+      },
+      {
+        "id": "video-7-9",
+        "title": "多态",
+        "duration": 823,
+        "url": "https://www.bilibili.com/video/BV1QU4y1o7MS/?p=33",
+        "status": "idle"
+      },
+      {
+        "id": "video-7-10",
+        "title": "多态形式",
+        "duration": 163,
+        "url": "https://www.bilibili.com/video/BV1QU4y1o7MS/?p=34",
+        "status": "idle"
+      },
+      {
+        "id": "video-7-11",
+        "title": "静态、动态绑定",
+        "duration": 193,
+        "url": "https://www.bilibili.com/video/BV1QU4y1o7MS/?p=45",
+        "status": "idle"
+      },
+      {
+        "id": "video-7-12",
+        "title": "面向对象设计原则",
+        "duration": 406,
+        "url": "https://www.bilibili.com/video/BV1QU4y1o7MS/?p=52",
+        "status": "idle"
+      },
+      {
+        "id": "video-7-13",
+        "title": "面向对象分析",
+        "duration": 309,
+        "url": "https://www.bilibili.com/video/BV1QU4y1o7MS/?p=60",
+        "status": "idle"
+      },
+      {
+        "id": "video-7-14",
+        "title": "面向对象设计",
+        "duration": 268,
+        "url": "https://www.bilibili.com/video/BV1QU4y1o7MS/?p=61",
+        "status": "idle"
+      },
+      {
+        "id": "video-7-15",
+        "title": "面向对象测试",
+        "duration": 138,
+        "url": "https://www.bilibili.com/video/BV1QU4y1o7MS/?p=62",
+        "status": "idle"
+      },
+      {
+        "id": "video-7-16",
+        "title": "面向对象程序设计",
+        "duration": 520,
+        "url": "https://www.bilibili.com/video/BV1QU4y1o7MS/?p=72",
+        "status": "idle"
+      },
+      {
+        "id": "video-7-17",
+        "title": "杂题选讲",
+        "duration": 36,
+        "url": "https://www.bilibili.com/video/BV1QU4y1o7MS/?p=75",
+        "status": "idle"
+      },
+      {
+        "id": "video-7-18",
+        "title": "面向对象总结",
+        "duration": 216,
+        "url": "https://www.bilibili.com/video/BV1QU4y1o7MS/?p=81",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-8",
+    "name": "上午题—UML（3~4分）",
+    "videos": [
+      {
+        "id": "video-8-1",
+        "title": "讲解形式",
+        "duration": 258,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-2",
+        "title": "UML",
+        "duration": 177,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-3",
+        "title": "UML事物",
+        "duration": 400,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=3",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-4",
+        "title": "依赖关系",
+        "duration": 263,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=5",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-5",
+        "title": "关联、聚合、组合关系",
+        "duration": 1015,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=6",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-6",
+        "title": "泛化关系",
+        "duration": 177,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=7",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-7",
+        "title": "实现关系",
+        "duration": 130,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=8",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-8",
+        "title": "关联多重度",
+        "duration": 671,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=19",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-9",
+        "title": "UML类图",
+        "duration": 868,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=24",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-10",
+        "title": "UML类图概念",
+        "duration": 104,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=25",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-11",
+        "title": "对象图",
+        "duration": 374,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=31",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-12",
+        "title": "用例图",
+        "duration": 319,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=33",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-13",
+        "title": "包含关系",
+        "duration": 744,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=34",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-14",
+        "title": "扩展关系",
+        "duration": 644,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=35",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-15",
+        "title": "泛化关系",
+        "duration": 392,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=36",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-16",
+        "title": "用例图概念",
+        "duration": 349,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=37",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-17",
+        "title": "序列图",
+        "duration": 1008,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=40",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-18",
+        "title": "序列图例子",
+        "duration": 388,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=41",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-19",
+        "title": "通信图",
+        "duration": 748,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=45",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-20",
+        "title": "通信图例子",
+        "duration": 141,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=46",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-21",
+        "title": "状态图",
+        "duration": 94,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=49",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-22",
+        "title": "状态和活动",
+        "duration": 962,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=50",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-23",
+        "title": "转换和事件",
+        "duration": 1274,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=51",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-24",
+        "title": "状态图概念",
+        "duration": 521,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=52",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-25",
+        "title": "活动图",
+        "duration": 621,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=59",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-26",
+        "title": "活动图例子",
+        "duration": 264,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=60",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-27",
+        "title": "构件图",
+        "duration": 340,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=65",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-28",
+        "title": "部署图",
+        "duration": 245,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=69",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-29",
+        "title": "UML图总和",
+        "duration": 125,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=73",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-30",
+        "title": "杂题选讲",
+        "duration": 83,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=77",
+        "status": "idle"
+      },
+      {
+        "id": "video-8-31",
+        "title": "UML总结",
+        "duration": 263,
+        "url": "https://www.bilibili.com/video/BV1a44y1K7HH/?p=82",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-9",
+    "name": "下午题—试题三（15分）",
+    "videos": [
+      {
+        "id": "video-9-1",
+        "title": "讲解形式",
+        "duration": 561,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-2",
+        "title": "基础知识引入",
+        "duration": 304,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-3",
+        "title": "依赖关系",
+        "duration": 263,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=3",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-4",
+        "title": "关联、聚合、组合关系",
+        "duration": 1015,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=4",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-5",
+        "title": "泛化关系",
+        "duration": 177,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=5",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-6",
+        "title": "实现关系",
+        "duration": 130,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=6",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-7",
+        "title": "UML类图",
+        "duration": 868,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=7",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-8",
+        "title": "用例图",
+        "duration": 319,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=8",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-9",
+        "title": "包含关系",
+        "duration": 744,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=9",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-10",
+        "title": "扩展关系",
+        "duration": 644,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=10",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-11",
+        "title": "泛化关系",
+        "duration": 392,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=11",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-12",
+        "title": "2021年下半年问题1",
+        "duration": 602,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=12",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-13",
+        "title": "2021年下半年问题2",
+        "duration": 559,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=13",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-14",
+        "title": "2021年下半年问题3",
+        "duration": 1084,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=14",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-15",
+        "title": "2021年上半年问题1",
+        "duration": 1070,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=15",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-16",
+        "title": "2021年上半年问题2",
+        "duration": 516,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=16",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-17",
+        "title": "2021年上半年问题3",
+        "duration": 439,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=17",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-18",
+        "title": "2020年下半年问题1",
+        "duration": 896,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=18",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-19",
+        "title": "2020年下半年问题2、问题3",
+        "duration": 1092,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=19",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-20",
+        "title": "2019年下半年问题1",
+        "duration": 809,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=20",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-21",
+        "title": "2019年下半年问题2",
+        "duration": 656,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=21",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-22",
+        "title": "2019年下半年问题3",
+        "duration": 432,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=22",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-23",
+        "title": "2019年上半年问题1",
+        "duration": 946,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=23",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-24",
+        "title": "2019年上半年问题2",
+        "duration": 692,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=24",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-25",
+        "title": "2019年上半年问题3",
+        "duration": 543,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=25",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-26",
+        "title": "2018年下半年问题1",
+        "duration": 341,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=26",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-27",
+        "title": "2018年下半年问题2",
+        "duration": 381,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=27",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-28",
+        "title": "2018年下半年问题3",
+        "duration": 561,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=28",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-29",
+        "title": "2018年上半年问题1、问题2",
+        "duration": 1468,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=29",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-30",
+        "title": "2018年上半年问题3",
+        "duration": 608,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=30",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-31",
+        "title": "2017年下半年问题1",
+        "duration": 753,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=31",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-32",
+        "title": "2017年下半年问题2",
+        "duration": 296,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=32",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-33",
+        "title": "2017年下半年问题3",
+        "duration": 398,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=33",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-34",
+        "title": "后续知识引入",
+        "duration": 182,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=34",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-35",
+        "title": "2017年上半年问题1",
+        "duration": 1023,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=35",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-36",
+        "title": "2017年上半年问题2",
+        "duration": 647,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=36",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-37",
+        "title": "2017年上半年问题3",
+        "duration": 335,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=37",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-38",
+        "title": "2016年下半年问题1",
+        "duration": 770,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=38",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-39",
+        "title": "2016年下半年问题2",
+        "duration": 671,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=39",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-40",
+        "title": "2016年下半年问题3",
+        "duration": 783,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=40",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-41",
+        "title": "2016年上半年问题1、问题2",
+        "duration": 614,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=41",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-42",
+        "title": "2016年上半年问题3",
+        "duration": 531,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=42",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-43",
+        "title": "2015年下半年问题1、问题2",
+        "duration": 753,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=43",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-44",
+        "title": "2015年下半年问题3",
+        "duration": 702,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=44",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-45",
+        "title": "2015年上半年问题1",
+        "duration": 749,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=45",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-46",
+        "title": "2015年上半年问题2",
+        "duration": 775,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=46",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-47",
+        "title": "2015年上半年问题3",
+        "duration": 364,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=47",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-48",
+        "title": "2014年下半年问题1、问题2",
+        "duration": 918,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=48",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-49",
+        "title": "2014年下半年问题3",
+        "duration": 850,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=49",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-50",
+        "title": "2014年上半年问题1、问题2",
+        "duration": 817,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=50",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-51",
+        "title": "2014年上半年试题3",
+        "duration": 475,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=51",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-52",
+        "title": "2013年下半年问题1、问题2",
+        "duration": 854,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=52",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-53",
+        "title": "2013年下半年问题3",
+        "duration": 666,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=53",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-54",
+        "title": "2013年上半年问题1",
+        "duration": 567,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=54",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-55",
+        "title": "2013年上半年问题2",
+        "duration": 534,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=55",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-56",
+        "title": "2013年上半年问题3",
+        "duration": 240,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=56",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-57",
+        "title": "2012年下半年问题1",
+        "duration": 731,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=57",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-58",
+        "title": "2012年下半年问题2",
+        "duration": 493,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=58",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-59",
+        "title": "2012年下半年问题3",
+        "duration": 299,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=59",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-60",
+        "title": "2012年上半年问题1",
+        "duration": 371,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=60",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-61",
+        "title": "2012年上半年问题2",
+        "duration": 398,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=61",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-62",
+        "title": "2012年上半年问题3",
+        "duration": 278,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=62",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-63",
+        "title": "2010年下半年问题1",
+        "duration": 575,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=63",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-64",
+        "title": "2010年下半年问题2",
+        "duration": 487,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=64",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-65",
+        "title": "2010年下半年问题3",
+        "duration": 340,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=65",
+        "status": "idle"
+      },
+      {
+        "id": "video-9-66",
+        "title": "试题三总结",
+        "duration": 389,
+        "url": "https://www.bilibili.com/video/BV11Z4y1z7Uc/?p=66",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-10",
+    "name": "上午题—设计模式（固定4分）",
+    "videos": [
+      {
+        "id": "video-10-1",
+        "title": "讲解形式",
+        "duration": 398,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-2",
+        "title": "设计模式分类",
+        "duration": 513,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-3",
+        "title": "创建型设计模式",
+        "duration": 477,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=4",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-4",
+        "title": "简单工厂模式",
+        "duration": 1157,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=5",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-5",
+        "title": "工厂方法模式",
+        "duration": 1038,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=6",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-6",
+        "title": "工厂方法模式概念",
+        "duration": 465,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=7",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-7",
+        "title": "抽象工厂模式",
+        "duration": 949,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=8",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-8",
+        "title": "生成器模式",
+        "duration": 1325,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=11",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-9",
+        "title": "原型模式",
+        "duration": 735,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=15",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-10",
+        "title": "单例模式",
+        "duration": 493,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=16",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-11",
+        "title": "结构型设计模式",
+        "duration": 258,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=20",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-12",
+        "title": "适配器模式",
+        "duration": 1217,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=21",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-13",
+        "title": "桥接模式",
+        "duration": 1536,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=23",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-14",
+        "title": "组合模式概念",
+        "duration": 1120,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=27",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-15",
+        "title": "组合模式添加和删除代码实现",
+        "duration": 1096,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=28",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-16",
+        "title": "组合模式遍历代码实现",
+        "duration": 1380,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=29",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-17",
+        "title": "装饰器模式概念",
+        "duration": 797,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=33",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-18",
+        "title": "装饰器模式代码实现",
+        "duration": 1219,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=34",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-19",
+        "title": "装饰器模式代码调用过程",
+        "duration": 658,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=35",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-20",
+        "title": "外观模式",
+        "duration": 667,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=37",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-21",
+        "title": "享元模式概念",
+        "duration": 1036,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=40",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-22",
+        "title": "享元模式代码实现",
+        "duration": 1734,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=41",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-23",
+        "title": "代理模式",
+        "duration": 877,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=43",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-24",
+        "title": "行为型设计模式",
+        "duration": 289,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=45",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-25",
+        "title": "责任链模式",
+        "duration": 995,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=46",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-26",
+        "title": "命令模式",
+        "duration": 1428,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=47",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-27",
+        "title": "解释器模式",
+        "duration": 1939,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=50",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-28",
+        "title": "迭代器模式",
+        "duration": 1888,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=51",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-29",
+        "title": "中介者模式",
+        "duration": 746,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=52",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-30",
+        "title": "中介者模式代码实现",
+        "duration": 1166,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=53",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-31",
+        "title": "备忘录模式",
+        "duration": 1429,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=55",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-32",
+        "title": "观察者模式",
+        "duration": 2493,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=56",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-33",
+        "title": "状态模式",
+        "duration": 1324,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=64",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-34",
+        "title": "策略模式",
+        "duration": 1232,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=67",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-35",
+        "title": "模板方法模式",
+        "duration": 1040,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=71",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-36",
+        "title": "访问者模式",
+        "duration": 1852,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=72",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-37",
+        "title": "访问者模式代码实现",
+        "duration": 884,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=73",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-38",
+        "title": "设计模式总和",
+        "duration": 248,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=76",
+        "status": "idle"
+      },
+      {
+        "id": "video-10-39",
+        "title": "设计模式总结",
+        "duration": 1230,
+        "url": "https://www.bilibili.com/video/BV18L4y1M7Bd/?p=85",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-11",
+    "name": "下午题—试题六（15分）",
+    "videos": [
+      {
+        "id": "video-11-1",
+        "title": "讲解形式",
+        "duration": 412,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-2",
+        "title": "简单工厂模式",
+        "duration": 1157,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-3",
+        "title": "工厂方法模式",
+        "duration": 1038,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=3",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-4",
+        "title": "工厂方法模式概念",
+        "duration": 465,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=4",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-5",
+        "title": "抽象工厂模式",
+        "duration": 949,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=5",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-6",
+        "title": "2012年下半年试题六",
+        "duration": 869,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=6",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-7",
+        "title": "2012年下半年试题六代码补充",
+        "duration": 161,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=7",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-8",
+        "title": "生成器模式",
+        "duration": 1325,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=8",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-9",
+        "title": "2017年上半年试题六",
+        "duration": 990,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=9",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-10",
+        "title": "2017年上半年试题六代码执行过程",
+        "duration": 658,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=10",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-11",
+        "title": "2018年上半年试题六",
+        "duration": 1006,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=11",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-12",
+        "title": "原型模式",
+        "duration": 735,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=12",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-13",
+        "title": "2013年上半年试题六",
+        "duration": 1485,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=13",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-14",
+        "title": "适配器模式",
+        "duration": 1217,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=14",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-15",
+        "title": "2016年上半年试题六",
+        "duration": 1142,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=15",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-16",
+        "title": "桥接模式",
+        "duration": 1536,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=16",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-17",
+        "title": "2009年上半年试题六",
+        "duration": 1092,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=17",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-18",
+        "title": "2009年上半年试题六代码补充",
+        "duration": 173,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=18",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-19",
+        "title": "2013年下半年试题六",
+        "duration": 1172,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=19",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-20",
+        "title": "2017年下半年试题六",
+        "duration": 841,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=20",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-21",
+        "title": "组合模式概念",
+        "duration": 1120,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=21",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-22",
+        "title": "组合模式添加和删除代码实现",
+        "duration": 1096,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=22",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-23",
+        "title": "组合模式遍历代码实现",
+        "duration": 1380,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=23",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-24",
+        "title": "2009年下半年试题六",
+        "duration": 992,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=24",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-25",
+        "title": "2010年下半年试题六",
+        "duration": 919,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=25",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-26",
+        "title": "2011年上半年试题六",
+        "duration": 1372,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=26",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-27",
+        "title": "2021年上半年试题六",
+        "duration": 971,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=27",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-28",
+        "title": "装饰器模式概念",
+        "duration": 797,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=28",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-29",
+        "title": "装饰器模式代码实现",
+        "duration": 1219,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=29",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-30",
+        "title": "装饰器模式代码调用过程",
+        "duration": 658,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=30",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-31",
+        "title": "2012年上半年试题六",
+        "duration": 1675,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=31",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-32",
+        "title": "2016年下半年试题六",
+        "duration": 2441,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=32",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-33",
+        "title": "享元模式概念",
+        "duration": 1036,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=33",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-34",
+        "title": "享元模式代码实现",
+        "duration": 1734,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=34",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-35",
+        "title": "2021年下半年试题六",
+        "duration": 1223,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=35",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-36",
+        "title": "命令模式",
+        "duration": 1428,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=36",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-37",
+        "title": "2014年下半年试题六",
+        "duration": 1383,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=37",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-38",
+        "title": "观察者模式",
+        "duration": 2493,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=38",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-39",
+        "title": "2014年上半年试题六",
+        "duration": 1794,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=39",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-40",
+        "title": "2019年下半年试题六",
+        "duration": 1116,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=40",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-41",
+        "title": "状态模式",
+        "duration": 1324,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=41",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-42",
+        "title": "2011年下半年试题六",
+        "duration": 1573,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=42",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-43",
+        "title": "2018年下半年试题六",
+        "duration": 1302,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=43",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-44",
+        "title": "策略模式",
+        "duration": 1232,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=44",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-45",
+        "title": "2010年上半年试题六",
+        "duration": 1011,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=45",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-46",
+        "title": "2015年下半年试题六",
+        "duration": 1251,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=46",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-47",
+        "title": "2019年上半年试题六",
+        "duration": 979,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=47",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-48",
+        "title": "访问者模式",
+        "duration": 1852,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=48",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-49",
+        "title": "访问者模式代码实现",
+        "duration": 884,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=49",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-50",
+        "title": "2015年上半年试题六",
+        "duration": 817,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=50",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-51",
+        "title": "2015年上半年试题六代码填空",
+        "duration": 157,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=51",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-52",
+        "title": "中介者模式",
+        "duration": 746,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=52",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-53",
+        "title": "中介者模式代码实现",
+        "duration": 1166,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=53",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-54",
+        "title": "2020年下半年试题六",
+        "duration": 2131,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=54",
+        "status": "idle"
+      },
+      {
+        "id": "video-11-55",
+        "title": "试题六总结",
+        "duration": 529,
+        "url": "https://www.bilibili.com/video/BV1XT4y1v7ih/?p=55",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-12",
+    "name": "上午题—操作系统（固定6分）",
+    "videos": [
+      {
+        "id": "video-12-1",
+        "title": "讲解形式",
+        "duration": 227,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-2",
+        "title": "操作系统地位",
+        "duration": 311,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-3",
+        "title": "程序顺序执行",
+        "duration": 468,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=5",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-4",
+        "title": "前趋图",
+        "duration": 1285,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=6",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-5",
+        "title": "程序并发执行和前驱图",
+        "duration": 481,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=16",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-6",
+        "title": "程序并发执行的问题",
+        "duration": 527,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=17",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-7",
+        "title": "进程的三态模型",
+        "duration": 893,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=20",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-8",
+        "title": "同步与互斥概念",
+        "duration": 843,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=23",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-9",
+        "title": "信号量机制和PV操作",
+        "duration": 1330,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=24",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-10",
+        "title": "PV操作实现进程的互斥",
+        "duration": 490,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=30",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-11",
+        "title": "PV操作实现进程的同步1",
+        "duration": 1118,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=31",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-12",
+        "title": "PV操作实现进程的同步2",
+        "duration": 545,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=32",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-13",
+        "title": "死锁",
+        "duration": 992,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=36",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-14",
+        "title": "进程资源图",
+        "duration": 1187,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=44",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-15",
+        "title": "死锁避免",
+        "duration": 1249,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=49",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-16",
+        "title": "线程",
+        "duration": 348,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=52",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-17",
+        "title": "局部性原理",
+        "duration": 613,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=56",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-18",
+        "title": "分页存储管理",
+        "duration": 775,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=59",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-19",
+        "title": "段页式存储管理",
+        "duration": 325,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=66",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-20",
+        "title": "单缓冲区",
+        "duration": 877,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=70",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-21",
+        "title": "双缓冲区",
+        "duration": 727,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=71",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-22",
+        "title": "磁盘调度算法",
+        "duration": 1029,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=74",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-23",
+        "title": "旋转调度算法",
+        "duration": 1451,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=78",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-24",
+        "title": "多级索引结构",
+        "duration": 1096,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=83",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-25",
+        "title": "文件目录",
+        "duration": 282,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=90",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-26",
+        "title": "目录结构",
+        "duration": 1084,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=93",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-27",
+        "title": "位示图",
+        "duration": 437,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=98",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-28",
+        "title": "杂题选讲",
+        "duration": 67,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=106",
+        "status": "idle"
+      },
+      {
+        "id": "video-12-29",
+        "title": "操作系统总结",
+        "duration": 246,
+        "url": "https://www.bilibili.com/video/BV1AY411E7GC/?p=125",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-13",
+    "name": "上午题—结构化开发（3~4分）",
+    "videos": [
+      {
+        "id": "video-13-1",
+        "title": "讲解形式",
+        "duration": 221,
+        "url": "https://www.bilibili.com/video/BV19Y4y1v7Rv/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-13-2",
+        "title": "耦合",
+        "duration": 653,
+        "url": "https://www.bilibili.com/video/BV19Y4y1v7Rv/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-13-3",
+        "title": "内聚",
+        "duration": 466,
+        "url": "https://www.bilibili.com/video/BV19Y4y1v7Rv/?p=10",
+        "status": "idle"
+      },
+      {
+        "id": "video-13-4",
+        "title": "设计原则",
+        "duration": 596,
+        "url": "https://www.bilibili.com/video/BV19Y4y1v7Rv/?p=19",
+        "status": "idle"
+      },
+      {
+        "id": "video-13-5",
+        "title": "系统文档",
+        "duration": 418,
+        "url": "https://www.bilibili.com/video/BV19Y4y1v7Rv/?p=29",
+        "status": "idle"
+      },
+      {
+        "id": "video-13-6",
+        "title": "数据流图知识引入",
+        "duration": 157,
+        "url": "https://www.bilibili.com/video/BV19Y4y1v7Rv/?p=33",
+        "status": "idle"
+      },
+      {
+        "id": "video-13-7",
+        "title": "数据流图基本图形元素",
+        "duration": 750,
+        "url": "https://www.bilibili.com/video/BV19Y4y1v7Rv/?p=34",
+        "status": "idle"
+      },
+      {
+        "id": "video-13-8",
+        "title": "外部实体",
+        "duration": 164,
+        "url": "https://www.bilibili.com/video/BV19Y4y1v7Rv/?p=35",
+        "status": "idle"
+      },
+      {
+        "id": "video-13-9",
+        "title": "数据存储",
+        "duration": 210,
+        "url": "https://www.bilibili.com/video/BV19Y4y1v7Rv/?p=36",
+        "status": "idle"
+      },
+      {
+        "id": "video-13-10",
+        "title": "加工",
+        "duration": 226,
+        "url": "https://www.bilibili.com/video/BV19Y4y1v7Rv/?p=37",
+        "status": "idle"
+      },
+      {
+        "id": "video-13-11",
+        "title": "数据流",
+        "duration": 230,
+        "url": "https://www.bilibili.com/video/BV19Y4y1v7Rv/?p=38",
+        "status": "idle"
+      },
+      {
+        "id": "video-13-12",
+        "title": "父图子图平衡",
+        "duration": 538,
+        "url": "https://www.bilibili.com/video/BV19Y4y1v7Rv/?p=39",
+        "status": "idle"
+      },
+      {
+        "id": "video-13-13",
+        "title": "加工既有输入数据流也有输出数据流",
+        "duration": 441,
+        "url": "https://www.bilibili.com/video/BV19Y4y1v7Rv/?p=40",
+        "status": "idle"
+      },
+      {
+        "id": "video-13-14",
+        "title": "数据守恒",
+        "duration": 514,
+        "url": "https://www.bilibili.com/video/BV19Y4y1v7Rv/?p=41",
+        "status": "idle"
+      },
+      {
+        "id": "video-13-15",
+        "title": "数据字典",
+        "duration": 326,
+        "url": "https://www.bilibili.com/video/BV19Y4y1v7Rv/?p=49",
+        "status": "idle"
+      },
+      {
+        "id": "video-13-16",
+        "title": "杂题选讲",
+        "duration": 93,
+        "url": "https://www.bilibili.com/video/BV19Y4y1v7Rv/?p=54",
+        "status": "idle"
+      },
+      {
+        "id": "video-13-17",
+        "title": "结构化开发",
+        "duration": 137,
+        "url": "https://www.bilibili.com/video/BV19Y4y1v7Rv/?p=72",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-14",
+    "name": "上午题—软件工程（上）",
+    "videos": [
+      {
+        "id": "video-14-1",
+        "title": "讲解形式",
+        "duration": 337,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-2",
+        "title": "CMM",
+        "duration": 443,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-3",
+        "title": "CMMI",
+        "duration": 429,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=8",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-4",
+        "title": "瀑布模型",
+        "duration": 801,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=13",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-5",
+        "title": "V模型",
+        "duration": 207,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=14",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-6",
+        "title": "增量模型",
+        "duration": 678,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=22",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-7",
+        "title": "演化模型",
+        "duration": 405,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=29",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-8",
+        "title": "原型模型",
+        "duration": 629,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=30",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-9",
+        "title": "螺旋模型",
+        "duration": 553,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=34",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-10",
+        "title": "喷泉模型",
+        "duration": 332,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=38",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-11",
+        "title": "统一过程（UP）模型",
+        "duration": 317,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=42",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-12",
+        "title": "敏捷方法",
+        "duration": 582,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=48",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-13",
+        "title": "软件需求",
+        "duration": 282,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=59",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-14",
+        "title": "系统设计",
+        "duration": 510,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=62",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-15",
+        "title": "系统测试",
+        "duration": 770,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=67",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-16",
+        "title": "单元测试",
+        "duration": 492,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=74",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-17",
+        "title": "集成测试",
+        "duration": 789,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=77",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-18",
+        "title": "测试方法",
+        "duration": 303,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=82",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-19",
+        "title": "黑盒测试",
+        "duration": 663,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=83",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-20",
+        "title": "McCabe度量法",
+        "duration": 310,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=89",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-21",
+        "title": "白盒测试",
+        "duration": 283,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=100",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-22",
+        "title": "语句覆盖",
+        "duration": 730,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=101",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-23",
+        "title": "判定覆盖",
+        "duration": 243,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=102",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-24",
+        "title": "条件覆盖",
+        "duration": 360,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=103",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-25",
+        "title": "判定条件覆盖",
+        "duration": 302,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=104",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-26",
+        "title": "条件组合覆盖",
+        "duration": 580,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=105",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-27",
+        "title": "路径覆盖",
+        "duration": 621,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=106",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-28",
+        "title": "白盒测试+McCabe度量法",
+        "duration": 77,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=117",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-29",
+        "title": "伪代码+白盒测试+McCabe度量法",
+        "duration": 827,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=123",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-30",
+        "title": "系统可维护性评价指标",
+        "duration": 304,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=127",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-31",
+        "title": "软件维护",
+        "duration": 368,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=131",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-32",
+        "title": "软件文档",
+        "duration": 163,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=135",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-33",
+        "title": "软件维护内容",
+        "duration": 496,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=141",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-34",
+        "title": "软件可靠性、可用性、可维护性",
+        "duration": 298,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=155",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-35",
+        "title": "沟通路径",
+        "duration": 302,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=160",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-36",
+        "title": "软件项目估算",
+        "duration": 349,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=164",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-37",
+        "title": "Gantt图（甘特图）",
+        "duration": 425,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=169",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-38",
+        "title": "PERT图概念",
+        "duration": 886,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=172",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-39",
+        "title": "PERT图最早时刻",
+        "duration": 542,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=173",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-40",
+        "title": "PERT图最迟时刻",
+        "duration": 1005,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=174",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-41",
+        "title": "PERT图松弛时间和关键路径",
+        "duration": 992,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=175",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-42",
+        "title": "项目活动图",
+        "duration": 922,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=180",
+        "status": "idle"
+      },
+      {
+        "id": "video-14-43",
+        "title": "画项目活动图",
+        "duration": 137,
+        "url": "https://www.bilibili.com/video/BV1j94y1Z7xX/?p=198",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-15",
+    "name": "上午题—软件工程（下）",
+    "videos": [
+      {
+        "id": "video-15-1",
+        "title": "讲解形式",
+        "duration": 109,
+        "url": "https://www.bilibili.com/video/BV16u411C7U9/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-15-2",
+        "title": "软件配置管理",
+        "duration": 196,
+        "url": "https://www.bilibili.com/video/BV16u411C7U9/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-15-3",
+        "title": "风险管理",
+        "duration": 327,
+        "url": "https://www.bilibili.com/video/BV16u411C7U9/?p=7",
+        "status": "idle"
+      },
+      {
+        "id": "video-15-4",
+        "title": "风险识别",
+        "duration": 315,
+        "url": "https://www.bilibili.com/video/BV16u411C7U9/?p=8",
+        "status": "idle"
+      },
+      {
+        "id": "video-15-5",
+        "title": "风险预测",
+        "duration": 394,
+        "url": "https://www.bilibili.com/video/BV16u411C7U9/?p=9",
+        "status": "idle"
+      },
+      {
+        "id": "video-15-6",
+        "title": "风险评估",
+        "duration": 134,
+        "url": "https://www.bilibili.com/video/BV16u411C7U9/?p=10",
+        "status": "idle"
+      },
+      {
+        "id": "video-15-7",
+        "title": "风险控制",
+        "duration": 525,
+        "url": "https://www.bilibili.com/video/BV16u411C7U9/?p=11",
+        "status": "idle"
+      },
+      {
+        "id": "video-15-8",
+        "title": "ISO IEC 9126 软件质量模型",
+        "duration": 1184,
+        "url": "https://www.bilibili.com/video/BV16u411C7U9/?p=28",
+        "status": "idle"
+      },
+      {
+        "id": "video-15-9",
+        "title": "Mc Call 软件质量模型",
+        "duration": 92,
+        "url": "https://www.bilibili.com/video/BV16u411C7U9/?p=41",
+        "status": "idle"
+      },
+      {
+        "id": "video-15-10",
+        "title": "软件评审",
+        "duration": 538,
+        "url": "https://www.bilibili.com/video/BV16u411C7U9/?p=43",
+        "status": "idle"
+      },
+      {
+        "id": "video-15-11",
+        "title": "软件容错技术",
+        "duration": 354,
+        "url": "https://www.bilibili.com/video/BV16u411C7U9/?p=48",
+        "status": "idle"
+      },
+      {
+        "id": "video-15-12",
+        "title": "软件工具",
+        "duration": 282,
+        "url": "https://www.bilibili.com/video/BV16u411C7U9/?p=52",
+        "status": "idle"
+      },
+      {
+        "id": "video-15-13",
+        "title": "杂题选讲",
+        "duration": 123,
+        "url": "https://www.bilibili.com/video/BV16u411C7U9/?p=56",
+        "status": "idle"
+      },
+      {
+        "id": "video-15-14",
+        "title": "软件工程总结",
+        "duration": 270,
+        "url": "https://www.bilibili.com/video/BV16u411C7U9/?p=84",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-16",
+    "name": "上午题—信息安全（5分左右）",
+    "videos": [
+      {
+        "id": "video-16-1",
+        "title": "讲解形式",
+        "duration": 222,
+        "url": "https://www.bilibili.com/video/BV1rS4y187HK/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-16-2",
+        "title": "防火墙",
+        "duration": 783,
+        "url": "https://www.bilibili.com/video/BV1rS4y187HK/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-16-3",
+        "title": "病毒",
+        "duration": 267,
+        "url": "https://www.bilibili.com/video/BV1rS4y187HK/?p=13",
+        "status": "idle"
+      },
+      {
+        "id": "video-16-4",
+        "title": "网络攻击",
+        "duration": 584,
+        "url": "https://www.bilibili.com/video/BV1rS4y187HK/?p=24",
+        "status": "idle"
+      },
+      {
+        "id": "video-16-5",
+        "title": "网络安全",
+        "duration": 644,
+        "url": "https://www.bilibili.com/video/BV1rS4y187HK/?p=35",
+        "status": "idle"
+      },
+      {
+        "id": "video-16-6",
+        "title": "杂题选讲",
+        "duration": 60,
+        "url": "https://www.bilibili.com/video/BV1rS4y187HK/?p=56",
+        "status": "idle"
+      },
+      {
+        "id": "video-16-7",
+        "title": "信息安全总结",
+        "duration": 119,
+        "url": "https://www.bilibili.com/video/BV1rS4y187HK/?p=63",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-17",
+    "name": "上午题—计算机网络（固定5分）",
+    "videos": [
+      {
+        "id": "video-17-1",
+        "title": "讲解形式",
+        "duration": 217,
+        "url": "https://www.bilibili.com/video/BV1gU4y1U72k/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-17-2",
+        "title": "网络设备",
+        "duration": 616,
+        "url": "https://www.bilibili.com/video/BV1gU4y1U72k/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-17-3",
+        "title": "协议簇",
+        "duration": 377,
+        "url": "https://www.bilibili.com/video/BV1gU4y1U72k/?p=9",
+        "status": "idle"
+      },
+      {
+        "id": "video-17-4",
+        "title": "TCP和UDP",
+        "duration": 932,
+        "url": "https://www.bilibili.com/video/BV1gU4y1U72k/?p=16",
+        "status": "idle"
+      },
+      {
+        "id": "video-17-5",
+        "title": "SMTP和POP3",
+        "duration": 649,
+        "url": "https://www.bilibili.com/video/BV1gU4y1U72k/?p=24",
+        "status": "idle"
+      },
+      {
+        "id": "video-17-6",
+        "title": "ARP",
+        "duration": 563,
+        "url": "https://www.bilibili.com/video/BV1gU4y1U72k/?p=33",
+        "status": "idle"
+      },
+      {
+        "id": "video-17-7",
+        "title": "DHCP",
+        "duration": 168,
+        "url": "https://www.bilibili.com/video/BV1gU4y1U72k/?p=36",
+        "status": "idle"
+      },
+      {
+        "id": "video-17-8",
+        "title": "URL",
+        "duration": 264,
+        "url": "https://www.bilibili.com/video/BV1gU4y1U72k/?p=40",
+        "status": "idle"
+      },
+      {
+        "id": "video-17-9",
+        "title": "浏览器",
+        "duration": 113,
+        "url": "https://www.bilibili.com/video/BV1gU4y1U72k/?p=47",
+        "status": "idle"
+      },
+      {
+        "id": "video-17-10",
+        "title": "IP地址和子网掩码",
+        "duration": 1557,
+        "url": "https://www.bilibili.com/video/BV1gU4y1U72k/?p=52",
+        "status": "idle"
+      },
+      {
+        "id": "video-17-11",
+        "title": "IPv6",
+        "duration": 206,
+        "url": "https://www.bilibili.com/video/BV1gU4y1U72k/?p=64",
+        "status": "idle"
+      },
+      {
+        "id": "video-17-12",
+        "title": "无线网络",
+        "duration": 87,
+        "url": "https://www.bilibili.com/video/BV1gU4y1U72k/?p=67",
+        "status": "idle"
+      },
+      {
+        "id": "video-17-13",
+        "title": "Windows命令",
+        "duration": 257,
+        "url": "https://www.bilibili.com/video/BV1gU4y1U72k/?p=70",
+        "status": "idle"
+      },
+      {
+        "id": "video-17-14",
+        "title": "路由",
+        "duration": 249,
+        "url": "https://www.bilibili.com/video/BV1gU4y1U72k/?p=79",
+        "status": "idle"
+      },
+      {
+        "id": "video-17-15",
+        "title": "HTML",
+        "duration": 104,
+        "url": "https://www.bilibili.com/video/BV1gU4y1U72k/?p=85",
+        "status": "idle"
+      },
+      {
+        "id": "video-17-16",
+        "title": "Linux命令",
+        "duration": 107,
+        "url": "https://www.bilibili.com/video/BV1gU4y1U72k/?p=93",
+        "status": "idle"
+      },
+      {
+        "id": "video-17-17",
+        "title": "杂题选讲",
+        "duration": 76,
+        "url": "https://www.bilibili.com/video/BV1gU4y1U72k/?p=96",
+        "status": "idle"
+      },
+      {
+        "id": "video-17-18",
+        "title": "计算机网络总结",
+        "duration": 383,
+        "url": "https://www.bilibili.com/video/BV1gU4y1U72k/?p=121",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-18",
+    "name": "上午题—数据结构（上）",
+    "videos": [
+      {
+        "id": "video-18-1",
+        "title": "讲解形式简单概括",
+        "duration": 136,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-2",
+        "title": "大O表示法",
+        "duration": 641,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-3",
+        "title": "时间复杂度",
+        "duration": 845,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=3",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-4",
+        "title": "空间复杂度",
+        "duration": 311,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=4",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-5",
+        "title": "渐进符号",
+        "duration": 338,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=9",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-6",
+        "title": "递归式时间、空间复杂度",
+        "duration": 906,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=11",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-7",
+        "title": "递归式主方法",
+        "duration": 497,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=12",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-8",
+        "title": "线性结构与线性表定义",
+        "duration": 245,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=19",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-9",
+        "title": "线性表的顺序存储",
+        "duration": 864,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=20",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-10",
+        "title": "线性表顺序存储代码",
+        "duration": 157,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=21",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-11",
+        "title": "顺序表插入代码",
+        "duration": 701,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=22",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-12",
+        "title": "顺序表插入时间复杂度",
+        "duration": 357,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=23",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-13",
+        "title": "顺序表删除",
+        "duration": 482,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=24",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-14",
+        "title": "顺序表删除时间复杂度",
+        "duration": 282,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=25",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-15",
+        "title": "顺序表查找及时间复杂度",
+        "duration": 298,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=26",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-16",
+        "title": "线性表的链式存储",
+        "duration": 307,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=27",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-17",
+        "title": "线性表链式存储代码",
+        "duration": 895,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=28",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-18",
+        "title": "带头结点的单链表插入",
+        "duration": 1152,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=29",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-19",
+        "title": "不带头结点的单链表插入",
+        "duration": 800,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=30",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-20",
+        "title": "单链表插入时间复杂度",
+        "duration": 597,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=31",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-21",
+        "title": "带头结点和不带头结点的单链表删除",
+        "duration": 692,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=32",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-22",
+        "title": "单链表删除及时间复杂度",
+        "duration": 277,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=33",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-23",
+        "title": "单链表查找及时间复杂度",
+        "duration": 464,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=34",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-24",
+        "title": "循环单链表",
+        "duration": 320,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=35",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-25",
+        "title": "双链表",
+        "duration": 448,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=36",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-26",
+        "title": "栈的顺序存储",
+        "duration": 595,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=45",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-27",
+        "title": "栈的链式存储",
+        "duration": 389,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=46",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-28",
+        "title": "队列的顺序存储与循环队列",
+        "duration": 926,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=55",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-29",
+        "title": "队列的链式存储与双端队列",
+        "duration": 639,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=56",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-30",
+        "title": "栈与队列题目引进",
+        "duration": 139,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=65",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-31",
+        "title": "串",
+        "duration": 462,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=72",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-32",
+        "title": "串的模式匹配与朴素模式匹配",
+        "duration": 1353,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=75",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-33",
+        "title": "手算next数组值",
+        "duration": 634,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=76",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-34",
+        "title": "KMP简单了解",
+        "duration": 323,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=77",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-35",
+        "title": "一维数组",
+        "duration": 302,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=82",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-36",
+        "title": "二维数组",
+        "duration": 769,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=83",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-37",
+        "title": "数组计算公式与特性",
+        "duration": 170,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=84",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-38",
+        "title": "对称矩阵",
+        "duration": 1086,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=88",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-39",
+        "title": "三对角矩阵",
+        "duration": 705,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=89",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-40",
+        "title": "稀疏矩阵",
+        "duration": 217,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=90",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-41",
+        "title": "树形结构与树的定义",
+        "duration": 304,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=98",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-42",
+        "title": "树的基本概念",
+        "duration": 312,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=99",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-43",
+        "title": "树的性质1",
+        "duration": 308,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=100",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-44",
+        "title": "树的性质2",
+        "duration": 301,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=101",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-45",
+        "title": "树的性质3",
+        "duration": 382,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=102",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-46",
+        "title": "树的性质4",
+        "duration": 421,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=103",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-47",
+        "title": "二叉树定义",
+        "duration": 312,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=106",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-48",
+        "title": "二叉树性质1、2、3",
+        "duration": 435,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=107",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-49",
+        "title": "满二叉树与完全二叉树",
+        "duration": 465,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=108",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-50",
+        "title": "二叉树性质4",
+        "duration": 454,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=109",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-51",
+        "title": "二叉树顺序存储",
+        "duration": 856,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=117",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-52",
+        "title": "二叉树链式存储",
+        "duration": 585,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=118",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-53",
+        "title": "二叉树先序遍历",
+        "duration": 449,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=123",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-54",
+        "title": "二叉树中序遍历",
+        "duration": 285,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=124",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-55",
+        "title": "二叉树后序遍历",
+        "duration": 286,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=125",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-56",
+        "title": "二叉树层序遍历",
+        "duration": 60,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=126",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-57",
+        "title": "根据遍历序列构造二叉树",
+        "duration": 388,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=127",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-58",
+        "title": "先序+中序构造二叉树",
+        "duration": 309,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=128",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-59",
+        "title": "后序+中序构造二叉树",
+        "duration": 296,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=129",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-60",
+        "title": "层序+中序构造二叉树",
+        "duration": 210,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=130",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-61",
+        "title": "平衡二叉树",
+        "duration": 451,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=137",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-62",
+        "title": "二叉排序树定义",
+        "duration": 651,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=138",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-63",
+        "title": "二叉排序树构造",
+        "duration": 527,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=139",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-64",
+        "title": "最优二叉树定义",
+        "duration": 383,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=145",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-65",
+        "title": "最优二叉树构造",
+        "duration": 653,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=146",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-66",
+        "title": "最优二叉树概念",
+        "duration": 470,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=147",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-67",
+        "title": "最优二叉树构造规则",
+        "duration": 398,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=148",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-68",
+        "title": "构造最优二叉树例子",
+        "duration": 509,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=149",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-69",
+        "title": "哈夫曼编码定义",
+        "duration": 640,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=150",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-70",
+        "title": "哈夫曼编码压缩比",
+        "duration": 520,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=151",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-71",
+        "title": "线索二叉树定义",
+        "duration": 347,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=163",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-72",
+        "title": "二叉树类别引入",
+        "duration": 97,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=164",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-73",
+        "title": "图形结构与图的定义",
+        "duration": 217,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=168",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-74",
+        "title": "有向图与无向图",
+        "duration": 209,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=169",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-75",
+        "title": "完全图",
+        "duration": 472,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=170",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-76",
+        "title": "顶点的度",
+        "duration": 435,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=171",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-77",
+        "title": "路径",
+        "duration": 267,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=172",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-78",
+        "title": "连通图与强连通图",
+        "duration": 574,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=173",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-79",
+        "title": "邻接矩阵",
+        "duration": 608,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=176",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-80",
+        "title": "邻接表",
+        "duration": 436,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=177",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-81",
+        "title": "稠密图与稀疏图",
+        "duration": 263,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=178",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-82",
+        "title": "网",
+        "duration": 94,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=183",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-83",
+        "title": "图的遍历",
+        "duration": 198,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=184",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-84",
+        "title": "深度优先遍历",
+        "duration": 360,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=185",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-85",
+        "title": "深度优先遍历时间复杂度",
+        "duration": 409,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=186",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-86",
+        "title": "广度优先遍历和时间复杂度",
+        "duration": 595,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=187",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-87",
+        "title": "拓扑排序",
+        "duration": 819,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=194",
+        "status": "idle"
+      },
+      {
+        "id": "video-18-88",
+        "title": "数据结构半总结",
+        "duration": 294,
+        "url": "https://www.bilibili.com/video/BV1jY411b73f/?p=200",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-19",
+    "name": "上午题—数据结构（下）",
+    "videos": [
+      {
+        "id": "video-19-1",
+        "title": "讲解形式",
+        "duration": 182,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-2",
+        "title": "查找基本概念",
+        "duration": 453,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-3",
+        "title": "顺序查找",
+        "duration": 331,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=3",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-4",
+        "title": "折半查找",
+        "duration": 844,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=4",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-5",
+        "title": "折半查找补充",
+        "duration": 524,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=5",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-6",
+        "title": "哈希表定义",
+        "duration": 357,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=18",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-7",
+        "title": "哈希函数构造与处理冲突",
+        "duration": 1048,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=19",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-8",
+        "title": "处理冲突拓展和装填因子",
+        "duration": 496,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=20",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-9",
+        "title": "小顶堆与大顶堆",
+        "duration": 346,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=28",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-10",
+        "title": "建立小顶堆和大顶堆",
+        "duration": 708,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=29",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-11",
+        "title": "排序基本概念",
+        "duration": 412,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=33",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-12",
+        "title": "直接插入排序",
+        "duration": 691,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=34",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-13",
+        "title": "希尔排序",
+        "duration": 541,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=35",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-14",
+        "title": "直接插入、希尔、计数排序动画演示",
+        "duration": 333,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=36",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-15",
+        "title": "简单选择排序",
+        "duration": 613,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=41",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-16",
+        "title": "堆排序",
+        "duration": 708,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=42",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-17",
+        "title": "冒泡排序",
+        "duration": 647,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=45",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-18",
+        "title": "快速排序",
+        "duration": 1544,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=46",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-19",
+        "title": "快速排序修正",
+        "duration": 314,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=47",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-20",
+        "title": "归并排序",
+        "duration": 1264,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=52",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-21",
+        "title": "排序补充",
+        "duration": 156,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=59",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-22",
+        "title": "杂题选讲",
+        "duration": 50,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=62",
+        "status": "idle"
+      },
+      {
+        "id": "video-19-23",
+        "title": "数据结构总结",
+        "duration": 442,
+        "url": "https://www.bilibili.com/video/BV1UP4y1A79a/?p=72",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-20",
+    "name": "上午题—算法（4~5分）",
+    "videos": [
+      {
+        "id": "video-20-1",
+        "title": "讲解形式",
+        "duration": 294,
+        "url": "https://www.bilibili.com/video/BV1CS4y187Hk/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-20-2",
+        "title": "回溯法",
+        "duration": 237,
+        "url": "https://www.bilibili.com/video/BV1CS4y187Hk/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-20-3",
+        "title": "N皇后问题",
+        "duration": 1717,
+        "url": "https://www.bilibili.com/video/BV1CS4y187Hk/?p=3",
+        "status": "idle"
+      },
+      {
+        "id": "video-20-4",
+        "title": "非递归求解N皇后问题",
+        "duration": 3525,
+        "url": "https://www.bilibili.com/video/BV1CS4y187Hk/?p=4",
+        "status": "idle"
+      },
+      {
+        "id": "video-20-5",
+        "title": "递归求解N皇后问题",
+        "duration": 1167,
+        "url": "https://www.bilibili.com/video/BV1CS4y187Hk/?p=5",
+        "status": "idle"
+      },
+      {
+        "id": "video-20-6",
+        "title": "分治法",
+        "duration": 2345,
+        "url": "https://www.bilibili.com/video/BV1CS4y187Hk/?p=7",
+        "status": "idle"
+      },
+      {
+        "id": "video-20-7",
+        "title": "最大子段和问题",
+        "duration": 1882,
+        "url": "https://www.bilibili.com/video/BV1CS4y187Hk/?p=8",
+        "status": "idle"
+      },
+      {
+        "id": "video-20-8",
+        "title": "动态规划",
+        "duration": 1618,
+        "url": "https://www.bilibili.com/video/BV1CS4y187Hk/?p=13",
+        "status": "idle"
+      },
+      {
+        "id": "video-20-9",
+        "title": "0-1背包问题",
+        "duration": 1491,
+        "url": "https://www.bilibili.com/video/BV1CS4y187Hk/?p=14",
+        "status": "idle"
+      },
+      {
+        "id": "video-20-10",
+        "title": "求解0-1背包问题",
+        "duration": 3477,
+        "url": "https://www.bilibili.com/video/BV1CS4y187Hk/?p=15",
+        "status": "idle"
+      },
+      {
+        "id": "video-20-11",
+        "title": "0-1背包问题代码实现",
+        "duration": 1747,
+        "url": "https://www.bilibili.com/video/BV1CS4y187Hk/?p=16",
+        "status": "idle"
+      },
+      {
+        "id": "video-20-12",
+        "title": "0-1背包问题时间、空间复杂度",
+        "duration": 550,
+        "url": "https://www.bilibili.com/video/BV1CS4y187Hk/?p=17",
+        "status": "idle"
+      },
+      {
+        "id": "video-20-13",
+        "title": "贪心法",
+        "duration": 847,
+        "url": "https://www.bilibili.com/video/BV1CS4y187Hk/?p=25",
+        "status": "idle"
+      },
+      {
+        "id": "video-20-14",
+        "title": "部分背包问题求解",
+        "duration": 983,
+        "url": "https://www.bilibili.com/video/BV1CS4y187Hk/?p=26",
+        "status": "idle"
+      },
+      {
+        "id": "video-20-15",
+        "title": "部分背包问题代码实现",
+        "duration": 2516,
+        "url": "https://www.bilibili.com/video/BV1CS4y187Hk/?p=27",
+        "status": "idle"
+      },
+      {
+        "id": "video-20-16",
+        "title": "算法总和",
+        "duration": 368,
+        "url": "https://www.bilibili.com/video/BV1CS4y187Hk/?p=32",
+        "status": "idle"
+      },
+      {
+        "id": "video-20-17",
+        "title": "算法总结",
+        "duration": 487,
+        "url": "https://www.bilibili.com/video/BV1CS4y187Hk/?p=40",
+        "status": "idle"
+      }
+    ]
+  },
+  {
+    "id": "course-21",
+    "name": "下午题—试题四（15分）",
+    "videos": [
+      {
+        "id": "video-21-1",
+        "title": "讲解形式",
+        "duration": 402,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=1",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-2",
+        "title": "回溯法",
+        "duration": 237,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=2",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-3",
+        "title": "N皇后问题",
+        "duration": 1717,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=3",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-4",
+        "title": "非递归求解N皇后问题",
+        "duration": 3525,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=4",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-5",
+        "title": "递归求解N皇后问题",
+        "duration": 1167,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=5",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-6",
+        "title": "2015年上半年试题四",
+        "duration": 1243,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=6",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-7",
+        "title": "2015年上半年试题四代码补充",
+        "duration": 194,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=7",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-8",
+        "title": "2019年上半年试题四",
+        "duration": 824,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=8",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-9",
+        "title": "分治法",
+        "duration": 2345,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=9",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-10",
+        "title": "2014年上半年试题四",
+        "duration": 1804,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=10",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-11",
+        "title": "2017年上半年试题四",
+        "duration": 2372,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=11",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-12",
+        "title": "2020年下半年试题四",
+        "duration": 3357,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=12",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-13",
+        "title": "动态规划",
+        "duration": 1618,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=13",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-14",
+        "title": "0-1背包问题",
+        "duration": 1491,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=14",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-15",
+        "title": "求解0-1背包问题",
+        "duration": 3477,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=15",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-16",
+        "title": "0-1背包问题代码实现",
+        "duration": 1747,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=16",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-17",
+        "title": "0-1背包问题时间、空间复杂度",
+        "duration": 550,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=17",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-18",
+        "title": "2019年下半年试题四",
+        "duration": 2536,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=18",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-19",
+        "title": "2021年下半年试题四",
+        "duration": 3086,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=19",
+        "status": "idle"
+      },
+      {
+        "id": "video-21-20",
+        "title": "2021年下半年试题四补充",
+        "duration": 1711,
+        "url": "https://www.bilibili.com/video/BV1uZ4y1y77y/?p=20",
+        "status": "idle"
+      }
+    ]
+  }
+]
