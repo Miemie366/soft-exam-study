@@ -80,6 +80,18 @@ const defaultSettings = {
   apiUrl: "https://api.openai.com/v1",
   model: "gpt-5-mini",
 };
+const normalizeDailyMinutes = (value) => Math.min(1440, Math.max(1, Math.round(Number(value) || 1)));
+const openVideoUrl = (value) => {
+  try {
+    const url = new URL(value);
+    if (!['http:', 'https:'].includes(url.protocol)) throw new Error('invalid protocol');
+    window.open(url.href, '_blank', 'noopener,noreferrer');
+    return true;
+  } catch {
+    window.alert('请输入有效的 http:// 或 https:// 视频链接。');
+    return false;
+  }
+};
 const openExternalChatGPT = (prompt) => {
   const text = String(prompt || "").trim() || "请帮我复习软件设计师中级考试的重点。";
   // 优先尝试 Windows 桌面版；协议失败时不强制跳转，保留可见的网页版按钮。
@@ -256,10 +268,18 @@ Storage.prototype.setItem = function (key, value) {
   if (this === localStorage && key === SETTINGS_KEY) window.dispatchEvent(new Event(SETTINGS_UPDATED_EVENT));
 };
 async function hydrateState() {
+  const pending = new Map(readSyncQueue().map((item) => [item.remoteKey, item]));
   await Promise.all(
     Object.entries(stateKeyMap).map(async ([localKey, remoteKey]) => {
+      const queued = pending.get(remoteKey);
+      if (queued) {
+        originalSetItem.call(localStorage, localKey, encodeStoredValue(queued.value));
+        return;
+      }
+      const controller = new AbortController();
+      const timeout = window.setTimeout(() => controller.abort(), 5000);
       try {
-        const response = await fetch(`/api/state/${remoteKey}`);
+        const response = await fetch(`/api/state/${remoteKey}`, { signal: controller.signal });
         if (!response.ok) return;
         const remote = (await response.json()).value;
         const local = localStorage.getItem(localKey);
@@ -267,12 +287,11 @@ async function hydrateState() {
           originalSetItem.call(localStorage, localKey, encodeStoredValue(remote));
         else if (local) enqueueSync(localKey, remoteKey, decodeStoredValue(local));
       } catch (error) {
-        const fallback = localStorage.getItem(localKey);
-        if (fallback) enqueueSync(localKey, remoteKey, decodeStoredValue(fallback));
-      }
+        // Only queued edits are dirty. Do not upload an unchanged stale cache
+        // when the server read fails (another device may have newer data).
+      } finally { window.clearTimeout(timeout); }
     }),
   );
-  await runSync();
 }
 window.addEventListener("online", () => { updateSync({ online: true }); runSync(); });
 window.addEventListener("offline", () => updateSync({ online: false }));
@@ -418,28 +437,10 @@ function FocusSummary() {
   const groups = today.reduce((a, r) => { a[r.module] = (a[r.module] || 0) + r.duration; return a; }, {});
   return <section className="panel focusSummary"><div className="panelTitle"><h2>今日专注</h2><span>结束计时后自动保存学习时长</span></div><div className="focusStats"><div><b>{today.length}</b><small>今日次数</small></div><div><b>{formatTime(todaySeconds)}</b><small>今日时长</small></div><div><b>{formatTime(records.reduce((s, r) => s + r.duration, 0))}</b><small>累计时长</small></div></div><div className="focusGoal"><div><span>今日目标 {dailyTarget} 分钟</span><span>{remainingMinutes ? `还差 ${remainingMinutes} 分钟` : "今日目标已完成"}</span></div><div className="focusGoalTrack" role="progressbar" aria-label="今日学习目标进度" aria-valuenow={progress} aria-valuemin={0} aria-valuemax={100}><span style={{ width: `${progress}%` }} /></div></div>{Object.keys(groups).length ? <div className="focusRows">{Object.entries(groups).sort((a,b) => b[1]-a[1]).slice(0,4).map(([m,d]) => <div key={m}><span>{m}</span><b>{formatTime(d)}</b></div>)}</div> : <p className="focusEmpty">开始一次学习计时，结束后会在这里保存本次时长。</p>}</section>;
 }
-const papers = [
-  ["2023 年下半年 软件设计师上午题", "上午题", 75, "已完成", "82%"],
-  ["2023 年下半年 软件设计师下午题", "下午题", 5, "未开始", "—"],
-  ["2023 年上半年 软件设计师上午题", "上午题", 75, "已完成", "76%"],
-  ["2023 年上半年 软件设计师下午题", "下午题", 5, "已完成", "68%"],
-  ["2022 年下半年 软件设计师上午题", "上午题", 75, "已完成", "79%"],
-  ["2022 年下半年 软件设计师下午题", "下午题", 5, "未开始", "—"],
-  ["2022 年上半年 软件设计师上午题", "上午题", 75, "已完成", "74%"],
-];
-const syllabus = [
-  ["全部", 294],
-  ["计算机组成与体系结构", 42],
-  ["操作系统", 38],
-  ["数据库系统", 41],
-  ["计算机网络", 35],
-  ["软件工程", 44],
-  ["数据结构与算法", 48],
-  ["面向对象与设计模式", 46],
-];
 function QuestionBank({ onPractice }) {
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState('');
   const [query, setQuery] = useState("");
   const [year, setYear] = useState("全部年份");
   const [showAdd, setShowAdd] = useState(false);
@@ -465,7 +466,7 @@ function QuestionBank({ onPractice }) {
         return r.json();
       })
       .then(setQuestions)
-      .catch((e) => e.name !== "AbortError" && setQuestions([]))
+      .catch((e) => { if (e.name !== "AbortError") { setQuestions([]); setLoadError(e.message); } })
       .finally(() => setLoading(false));
     return () => controller.abort();
   }, []);
@@ -506,13 +507,15 @@ function QuestionBank({ onPractice }) {
   };
   const deleteQuestion = async (question) => {
     if (!window.confirm(`确定删除第 ${question.question_no || "?"} 题吗？\n${question.stem}`)) return;
-    const response = await fetch(`/api/questions/${question.id}`, { method: "DELETE" });
-    const result = await response.json();
-    if (!response.ok) {
-      window.alert(result.error || "删除失败");
-      return;
-    }
-    setQuestions((current) => current.filter((item) => item.id !== question.id));
+    try {
+      const response = await fetch(`/api/questions/${question.id}`, { method: "DELETE" });
+      const result = await response.json();
+      if (!response.ok) {
+        window.alert(result.error || "删除失败");
+        return;
+      }
+      setQuestions((current) => current.filter((item) => item.id !== question.id));
+    } catch { window.alert("删除失败，请检查后端连接后重试。"); }
   };
   const real = useMemo(
     () => questions.filter((q) => q.verified),
@@ -539,22 +542,23 @@ function QuestionBank({ onPractice }) {
       real.filter(
         (q) =>
           (year === "全部年份" || String(q.year) === year) &&
-          `${q.stem} ${q.topic} ${q.year}`.includes(query.trim()),
+          `${q.stem} ${q.topic} ${q.year} ${q.season} ${q.paper_type}`.includes(query.trim()),
       ),
     [real, year, query],
   );
   const paperGroups = useMemo(() => {
     const groups = new Map();
-    real.forEach((q) => {
+    filtered.forEach((q) => {
       const key = `${q.year || "未知年份"}-${q.season || "未知批次"}-${q.paper_type || "专项题"}`;
       if (!groups.has(key)) groups.set(key, { key, year: q.year, season: q.season, type: q.paper_type || "专项题", questions: [] });
       groups.get(key).questions.push(q);
     });
     return [...groups.values()].map((p) => {
       const expected = p.type.includes("上午") ? 75 : p.type.includes("下午") ? 5 : 0;
-      return { ...p, expected, complete: expected > 0 && p.questions.length >= expected };
+      const numbers = new Set(p.questions.map((q) => q.question_no));
+      return { ...p, expected, complete: expected > 0 && Array.from({ length: expected }, (_, i) => i + 1).every((n) => numbers.has(n)) };
     }).sort((a, b) => (b.year || 0) - (a.year || 0));
-  }, [real]);
+  }, [filtered]);
   const start = (list, title) =>
     list.length && onPractice({ title, questions: list });
   return (
@@ -562,7 +566,7 @@ function QuestionBank({ onPractice }) {
       <div className="pageHead">
         <div>
           <h1>题库练习</h1>
-          <p>已接入本地 SQLite 的真实专项题，支持即时判分和错题收集。</p>
+          <p>自行录入单选题，支持即时判分和错题收集。</p>
         </div>
         <div className="pageHeadActions">
           <button className="addQuestionButton" onClick={() => setShowAdd(true)}><Plus />新增题目</button>
@@ -575,7 +579,7 @@ function QuestionBank({ onPractice }) {
           <b>
             {loading
               ? "正在读取 SQLite 题库…"
-              : `已载入 ${real.length} 道本地题目`}
+              : loadError ? `题库加载失败：${loadError}` : `已载入 ${real.length} 道本地题目`}
           </b>
           <span>
             首次启动题库为空，请自行录入有权使用的题目，并核对答案与来源。
@@ -597,9 +601,6 @@ function QuestionBank({ onPractice }) {
             <option key={x}>{x}</option>
           ))}
         </select>
-        <select disabled>
-          <option>上午题</option>
-        </select>
       </div>
       <div className="bankLayout">
         <aside className="subjectRail">
@@ -616,10 +617,7 @@ function QuestionBank({ onPractice }) {
         </aside>
         <section className="paperPanel">
           <div className="paperHeader paperSetHeader"><span>试卷</span><span>类型</span><span>题数</span><span>状态</span><span>操作</span></div>
-          {paperGroups.filter((p) =>
-            (year === "全部年份" || String(p.year) === year) &&
-            `${p.year} ${p.season} ${p.type}`.includes(query.trim())
-          ).map((p) => (
+          {paperGroups.map((p) => (
             <React.Fragment key={p.key}>
               <div className="paperRow paperSetRow">
                 <b>{p.year} 年{p.season} 软件设计师 {p.type}</b><span>{p.type}</span><span>{p.questions.length}/{p.expected || "?"} 题</span><span>{p.complete ? "完整" : "待补全"}</span>
@@ -641,10 +639,7 @@ function QuestionBank({ onPractice }) {
               ) : null}
             </React.Fragment>
           ))}
-          {!loading && !paperGroups.some((p) =>
-            (year === "全部年份" || String(p.year) === year) &&
-            `${p.year} ${p.season} ${p.type}`.includes(query.trim())
-          ) ? <div className="bankEmpty">没有符合条件的历年试卷</div> : null}
+          {!loading && !paperGroups.length ? <div className="bankEmpty">{loadError ? '请确认后端服务运行后重新打开题库。' : '没有符合条件的题目'}</div> : null}
         </section>
         <div className="bankSide">
           <section className="panel practiceSummary">
@@ -672,7 +667,7 @@ function QuestionBank({ onPractice }) {
               <p>
                 <small>待复习错题</small>
                 <b>
-                  {readLocal(WRONG_KEY, []).length}
+                  {readLocal(WRONG_KEY, []).filter((item) => !item.mastered).length}
                   <em>题</em>
                 </b>
               </p>
@@ -789,7 +784,7 @@ const rolloverPlanPeriods = (now = new Date()) => {
       const missingItems = scheduledPlans[date].filter((item) => !existingTitles.has(item[0]));
       historyByDate.set(date, { date, items: [...existingItems, ...missingItems] });
     });
-    const nextHistory = [...historyByDate.values()].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 60);
+    const nextHistory = [...historyByDate.values()].sort((a, b) => b.date.localeCompare(a.date));
     const remainingPlans = { ...scheduledPlans };
     overdueDates.forEach((date) => delete remainingPlans[date]);
     localStorage.setItem("study-desk-plan-history-v1", JSON.stringify(nextHistory));
@@ -805,7 +800,7 @@ const rolloverPlanPeriods = (now = new Date()) => {
       const nextHistory = [
         { date: archiveDate, items: savedItems },
         ...history.filter((record) => record.date !== archiveDate),
-      ].slice(0, 60);
+      ];
       localStorage.setItem("study-desk-plan-history-v1", JSON.stringify(nextHistory));
     }
     const currentScheduledPlans = readLocal(SCHEDULED_PLAN_KEY, {});
@@ -829,7 +824,7 @@ const rolloverPlanPeriods = (now = new Date()) => {
       const nextHistory = [
         { week: storedWeekKey, items: savedWeekItems },
         ...history.filter((record) => record.week !== storedWeekKey),
-      ].slice(0, 24);
+      ];
       localStorage.setItem("study-desk-week-history-v1", JSON.stringify(nextHistory));
     }
     localStorage.setItem("study-desk-week-plan-v1", JSON.stringify([]));
@@ -1008,7 +1003,7 @@ function LearningPlan({ items, setItems, planClock }) {
         </article>
         <article>
           <small>今日预计</small>
-            <b className="dailyTargetEditor"><input type="number" min="1" max="1440" value={dailyTarget} onChange={(event) => { const value = Math.max(1, Number(event.target.value) || 1); setDailyTarget(value); const settings = readLocal(SETTINGS_KEY, defaultSettings); localStorage.setItem(SETTINGS_KEY, JSON.stringify({ ...settings, dailyMinutes: value })); }} /> 分钟</b>
+            <b className="dailyTargetEditor"><input type="number" min="1" max="1440" value={dailyTarget} onChange={(event) => { const value = normalizeDailyMinutes(event.target.value); setDailyTarget(value); const settings = readLocal(SETTINGS_KEY, defaultSettings); localStorage.setItem(SETTINGS_KEY, JSON.stringify({ ...settings, dailyMinutes: value })); }} /> 分钟</b>
             <span>每日学习目标（可直接修改）</span>
         </article>
         <article>
@@ -1355,17 +1350,16 @@ function ScratchPad({ question }) {
   const [tool, setTool] = useState("pen");
   const [aiText, setAiText] = useState("");
   const [asking, setAsking] = useState(false);
-  const [previousDraft, setPreviousDraft] = useState(null);
   const canvasRef = useRef(null);
   const activeStroke = useRef(null);
 
   useEffect(() => {
     const drafts = readLocal(DRAFT_KEY, {});
     if (drafts[draftKey]) {
-      setPreviousDraft(drafts[draftKey]);
-      const next = { ...drafts };
-      delete next[draftKey];
-      localStorage.setItem(DRAFT_KEY, JSON.stringify(next));
+      const savedDraft = drafts[draftKey];
+      setMode(savedDraft.mode || 'text');
+      setText(savedDraft.text || '');
+      setStrokes(savedDraft.strokes || []);
     }
   }, [draftKey]);
 
@@ -1463,20 +1457,12 @@ function ScratchPad({ question }) {
     setAiText("");
     persist({ text: "", strokes: [] });
   };
-  const restorePrevious = () => {
-    if (!previousDraft) return;
-    setMode(previousDraft.mode || (previousDraft.strokes?.length ? "draw" : "text"));
-    setText(previousDraft.text || "");
-    setStrokes(previousDraft.strokes || []);
-    setPreviousDraft(null);
-    persist({ mode: previousDraft.mode || "text", text: previousDraft.text || "", strokes: previousDraft.strokes || [] });
-  };
   const changeMode = (nextMode) => {
     setMode(nextMode);
     persist({ mode: nextMode });
   };
   const askAI = () => {
-    const prompt = `请讲解这道软件设计师考试题，先给解题思路，再说明正确答案依据和易错点。\n题目：${question.stem}\n${question.options.map((option, index) => `${String.fromCharCode(65 + index)}. ${option}`).join("\n")}\n我的答案：${text || "尚未作答"}`;
+    const prompt = `请讲解这道软件设计师考试题，先给解题思路，再说明正确答案依据和易错点。\n题目：${question.stem || question.title || ''}\n${(question.options || []).map((option, index) => `${String.fromCharCode(65 + index)}. ${option}`).join("\n")}\n我的答案：${text || "尚未作答"}`;
     openExternalChatGPT(prompt);
     setAiText("题目已复制，正在打开 ChatGPT；请在 ChatGPT 中粘贴发送。");
   };
@@ -1507,7 +1493,6 @@ function ScratchPad({ question }) {
       )}
       <div className="scratchActions">
         <span><Save />草稿已自动保存</span>
-        {previousDraft ? <button className="restoreDraft" onClick={restorePrevious}>查看之前草稿</button> : null}
         <button className="clearDraft" onClick={clear}>一键清空</button>
         <button className="askAi" disabled={asking} onClick={askAI}><Bot />{asking ? "正在思考…" : "AI 提示"}</button>
       </div>
@@ -1798,6 +1783,11 @@ function CourseProgress() {
     videos: [{ id: `video-${index + 1}-1`, title: `${name.replace(/（.*?）/g, '')} · 核心知识精讲`, url: '', status: index === 0 ? 'studying' : 'idle' }],
   }));
   const [tab, setTab] = useState(() => location.hash === '#course-materials' ? 'materials' : 'courses');
+  useEffect(() => {
+    const refreshTab = () => setTab(location.hash === '#course-materials' ? 'materials' : 'courses');
+    window.addEventListener('hashchange', refreshTab);
+    return () => window.removeEventListener('hashchange', refreshTab);
+  }, []);
   const [modules, setModules] = useState(() => readLocal('study-desk-course-modules-v2', []));
   const [expanded, setExpanded] = useState(() => new Set());
   const [openModuleMenu, setOpenModuleMenu] = useState(null);
@@ -1874,13 +1864,13 @@ function CourseProgress() {
     }),
   })));
   const openVideo = (moduleId, video) => {
+    if (video.url && !openVideoUrl(video.url)) return;
     if (video.status !== 'completed') setVideoStatus(moduleId, video, 'studying');
-    if (video.url) window.open(video.url, '_blank', 'noopener,noreferrer');
   };
   const loadMaterials = async (scan = false) => {
     setMaterialLoading(true);
     try {
-      if (scan) await fetch('/api/materials/scan', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' });
+      if (scan) { const response = await fetch('/api/materials/scan', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' }); if (!response.ok) throw new Error('资料扫描失败'); }
       const [listResponse, statsResponse] = await Promise.all([fetch('/api/materials?limit=500'), fetch('/api/materials/stats')]);
       if (!listResponse.ok || !statsResponse.ok) throw new Error('资料接口不可用');
       setMaterials(await listResponse.json());
@@ -1891,7 +1881,7 @@ function CourseProgress() {
   useEffect(() => { if (tab === 'materials' && !materials.length) loadMaterials(); }, [tab]);
   const saveCustomFolders = (next) => { setCustomFolders(next); localStorage.setItem('study-desk-material-folders-v1', JSON.stringify(next)); };
   const saveAddedMaterials = (next) => { setAddedMaterials(next); localStorage.setItem('study-desk-added-materials-v1', JSON.stringify(next)); };
-  const removeMaterial = (item) => { if (!window.confirm('从平台资料列表移除？不会删除 F 盘原文件。')) return; if (addedMaterials.some((added) => added.path === item.path)) saveAddedMaterials(addedMaterials.filter((added) => added.path !== item.path)); else { const next = [...new Set([...hiddenMaterialPaths, item.path])]; setHiddenMaterialPaths(next); localStorage.setItem('study-desk-hidden-materials-v1', JSON.stringify(next)); } setMaterialFolder(null); };
+  const removeMaterial = (item) => { if (!window.confirm('从平台资料列表移除？不会删除原始资料文件。')) return; if (addedMaterials.some((added) => added.path === item.path)) saveAddedMaterials(addedMaterials.filter((added) => added.path !== item.path)); else { const next = [...new Set([...hiddenMaterialPaths, item.path])]; setHiddenMaterialPaths(next); localStorage.setItem('study-desk-hidden-materials-v1', JSON.stringify(next)); } setMaterialFolder(null); };
   const removeMaterialFolder = (folder) => { if (!window.confirm(`从平台中移除“${folder.name}”文件夹？其中的原文件不会被删除，仍可在“全部”中查看。`)) return; const next = [...new Set([...removedMaterialFolders, folder.id])]; setRemovedMaterialFolders(next); localStorage.setItem('study-desk-removed-folders-v1', JSON.stringify(next)); if (folder.id.startsWith('folder-')) saveCustomFolders(customFolders.filter((item) => item.id !== folder.id)); setMaterialFolder(null); };
   const addMaterialFolder = () => { setFolderFormOpen(true); setMaterialFormOpen(false); };
   const submitMaterialFolder = (event) => { event.preventDefault(); const name = newFolderName.trim(); if (!name) return; saveCustomFolders([...customFolders, { id: `folder-${Date.now()}`, name, scope: materialFilter }]); setNewFolderName(''); setFolderFormOpen(false); };
@@ -1952,7 +1942,7 @@ function CourseProgress() {
                   {video.duration ? <span className="courseVideoDuration" style={{ color: '#6f8b7b', fontSize: 12, whiteSpace: 'nowrap', textAlign: 'right' }}>{formatDuration(video.duration)}</span> : <span />}
                   <button className={`courseStatus ${video.status}`} onClick={() => setVideoStatus(module.id, video, video.status === 'idle' ? 'studying' : video.status === 'studying' ? 'completed' : 'idle')}>{video.status === 'completed' ? '已完成' : video.status === 'studying' ? '学习中' : '未学习'}</button>
                   <button className="courseOpenVideo" onClick={() => openVideo(module.id, video)}>继续学习 <ExternalLink /></button>
-                  <div className="courseVideoManage"><button className="courseMore" onClick={() => setOpenVideoMenu(openVideoMenu === video.id ? null : video.id)} aria-label="视频菜单"><MoreHorizontal /></button>{openVideoMenu === video.id && <div className="coursePopup video">{video.url && <button onClick={() => window.open(video.url, '_blank', 'noopener,noreferrer')}>打开视频链接</button>}<button onClick={() => editVideo(module.id, video)}>编辑视频</button><button className="danger" onClick={() => deleteVideo(module.id, video.id)}>删除视频</button></div>}</div>
+                  <div className="courseVideoManage"><button className="courseMore" onClick={() => setOpenVideoMenu(openVideoMenu === video.id ? null : video.id)} aria-label="视频菜单"><MoreHorizontal /></button>{openVideoMenu === video.id && <div className="coursePopup video">{video.url && <button onClick={() => openVideoUrl(video.url)}>打开视频链接</button>}<button onClick={() => editVideo(module.id, video)}>编辑视频</button><button className="danger" onClick={() => deleteVideo(module.id, video.id)}>删除视频</button></div>}</div>
                 </div>) : <div className="courseEmpty">这个版块还没有视频，可以单个添加或批量导入。</div>}
                 <div className="courseVideoActions"><button onClick={() => addVideo(module.id)}>＋ 单个添加视频</button><button onClick={() => batchAdd(module.id)}>＋ 批量导入视频</button></div>
               </div>}
@@ -1977,7 +1967,7 @@ function StudyStats() {
     plans = readLocal(PLAN_KEY, seed),
     wrong = readLocal(WRONG_KEY, []),
     answers = readLocal(ANSWER_KEY, { total: 0, correct: 0 });
-  const seconds = timer.totalAllTime + timer.totalToday;
+  const seconds = timer.totalAllTime;
   const hours = (seconds / 3600).toFixed(1),
     done = plans.filter((x) => x[2]).length,
     accuracy = answers.total
@@ -2041,32 +2031,13 @@ function StudyStats() {
             </p>
           </div>
         </section>
-        <section className="panel">
-          <div className="sectionHead">
-            <h2>当前数据完整度</h2>
-            <span>逐步接入</span>
-          </div>
-          {[
-            ["学习计时", seconds ? 100 : 15],
-            ["学习计划", plans.length ? 100 : 0],
-            ["专题练习", answers.total ? 100 : 20],
-            ["历年真题导入", 15],
-            ["课程观看记录", 20],
-          ].map((x) => (
-            <div className="rateRow" key={x[0]}>
-              <span>{x[0]}</span>
-              <div>
-                <i style={{ width: x[1] + "%" }} />
-              </div>
-              <b>{x[1]}%</b>
-            </div>
-          ))}
-        </section>
+
       </div>
     </div>
   );
 }
 function AppSettings() {
+  const storageStatus = useSyncStatus();
   const [settings, setSettings] = useState(() =>
     readLocal(SETTINGS_KEY, defaultSettings),
   );
@@ -2088,7 +2059,9 @@ function AppSettings() {
   }, []);
   const update = (k, v) => setSettings((s) => ({ ...s, [k]: v }));
   const save = () => {
-    localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+    const normalized = { ...settings, dailyMinutes: normalizeDailyMinutes(settings.dailyMinutes), dailyQuestions: Math.max(1, Math.round(Number(settings.dailyQuestions) || 1)) };
+    setSettings(normalized);
+    localStorage.setItem(SETTINGS_KEY, JSON.stringify(normalized));
     setSaved("设置已保存在本机");
     setTimeout(() => setSaved(""), 2200);
   };
@@ -2116,25 +2089,23 @@ function AppSettings() {
       setGptState((current) => ({ ...current, loading: false, message: error.message, tone: "error" }));
     }
   };
-  const backup = () => {
-    const data = {
-      version: 1,
-      exportedAt: new Date().toISOString(),
-      settings,
-      plan: readLocal(PLAN_KEY, seed),
-      timer: readTimer(),
-      wrong: readLocal(WRONG_KEY, []),
-      answers: readLocal(ANSWER_KEY, { total: 0, correct: 0 }),
-    };
-    const url = URL.createObjectURL(
-      new Blob([JSON.stringify(data, null, 2)], { type: "application/json" }),
-    );
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `软考学习台备份-${todayKey()}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
-    setSaved("备份文件已导出");
+  const backup = async () => {
+    try {
+      await runSync();
+      if (readSyncQueue().length) throw new Error("还有数据未同步，请恢复连接并同步后再导出备份。");
+      const response = await fetch('/api/backup');
+      if (!response.ok) throw new Error("备份导出失败，请检查后端连接。");
+      const data = await response.json();
+      const url = URL.createObjectURL(
+        new Blob([JSON.stringify(data, null, 2)], { type: "application/json" }),
+      );
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `软考学习台备份-${todayKey()}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      setSaved("完整数据备份已导出");
+    } catch (error) { setSaved(error.message || "备份导出失败"); }
   };
   return (
     <div className="featurePage">
@@ -2168,7 +2139,8 @@ function AppSettings() {
               每日学习分钟
               <input
                 type="number"
-                min="10"
+                min="1"
+                max="1440"
                 value={settings.dailyMinutes}
                 onChange={(e) => update("dailyMinutes", Number(e.target.value))}
               />
@@ -2209,7 +2181,7 @@ function AppSettings() {
             <Download />
             <span>
               <b>导出完整备份</b>
-              <small>包括计划、计时、错题、设置和答题统计</small>
+              <small>包括课程、题库、历史计划、专注记录、错题和已保存设置</small>
             </span>
             <ChevronRight />
           </button>
@@ -2219,7 +2191,7 @@ function AppSettings() {
               <b>当前存储方式</b>
               <small>SQLite 为主存储；浏览器仅保留本机缓存</small>
             </span>
-            <span className="storageState">正常</span>
+            <span className="storageState">{storageStatus.backend !== 'online' ? '未连接' : storageStatus.queue.length ? '待同步' : '正常'}</span>
           </button>
         </section>
       </div>
@@ -2311,7 +2283,12 @@ function App() {
   const [wrongQuiz, setWrongQuiz] = useState(null);
   const [menu, setMenu] = useState(false);
   const [questionTab, setQuestionTab] = useState("bank");
-  const [active, setActive] = useState(() => location.hash === '#plan' ? 1 : ["#course-progress", "#course-materials"].includes(location.hash) ? 5 : 0);
+  const [active, setActive] = useState(() => location.hash === '#plan' ? 1 : ["#course-progress", "#course-materials"].includes(location.hash) ? 2 : 0);
+  useEffect(() => {
+    const followHash = () => setActive(location.hash === '#plan' ? 1 : ['#course-progress', '#course-materials'].includes(location.hash) ? 2 : 0);
+    window.addEventListener('hashchange', followHash);
+    return () => window.removeEventListener('hashchange', followHash);
+  }, []);
   useEffect(
     () => localStorage.setItem(PLAN_KEY, JSON.stringify(tasks)),
     [tasks],
@@ -2390,7 +2367,7 @@ function App() {
           ))}
         </nav>
       </aside>
-      <button className="mobileMenu" onClick={() => setMenu(!menu)}>
+      <button className="mobileMenu" aria-label={menu ? '关闭导航' : '打开导航'} aria-expanded={menu} onClick={() => setMenu(!menu)}>
         {menu ? <X /> : <Menu />}
       </button>
       <main>
@@ -2464,11 +2441,10 @@ function App() {
 }
 await hydrateState();
 if (localStorage.getItem('study-desk-courses-seeded-v1') !== 'true') {
-  const courses = readLocal('study-desk-course-modules-v2', []);
-  if (!courses.length) localStorage.setItem('study-desk-course-modules-v2', JSON.stringify(defaultCourses));
+  if (localStorage.getItem('study-desk-course-modules-v2') === null) localStorage.setItem('study-desk-course-modules-v2', JSON.stringify(defaultCourses));
   localStorage.setItem('study-desk-courses-seeded-v1', 'true');
 }
 rolloverPlanPeriods(new Date());
 syncReady = true;
-await runSync();
+runSync();
 createRoot(document.getElementById("root")).render(<App />);

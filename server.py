@@ -1,4 +1,6 @@
 import json, os, sqlite3, sys, urllib.request, urllib.error
+from contextlib import contextmanager
+from functools import wraps
 from datetime import datetime, timezone
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
@@ -88,6 +90,7 @@ def scan_materials():
         total=db.execute('SELECT COUNT(*) FROM materials').fetchone()[0]
     return {'scanned':len(found),'total':total,'added_or_updated':len(found)}
 
+@contextmanager
 def connect():
     db=sqlite3.connect(DB); db.row_factory=sqlite3.Row
     db.execute('PRAGMA journal_mode=WAL')
@@ -97,9 +100,37 @@ def connect():
     for name,kind in [('year','INTEGER'),('season','TEXT'),('paper_type','TEXT'),('question_no','INTEGER')]:
         if name not in existing:db.execute(f'ALTER TABLE questions ADD COLUMN {name} {kind}')
     db.execute('CREATE TABLE IF NOT EXISTS materials (id INTEGER PRIMARY KEY AUTOINCREMENT,path TEXT NOT NULL UNIQUE,name TEXT NOT NULL,extension TEXT NOT NULL,size INTEGER NOT NULL,modified REAL NOT NULL,category TEXT NOT NULL DEFAULT "其他",text_preview TEXT NOT NULL DEFAULT "",indexed_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP)')
-    db.commit(); return db
+    try:
+        db.commit()
+        with db:
+            yield db
+    finally:
+        db.close()
 
 with connect(): pass
+
+class RequestError(ValueError):
+    def __init__(self,status,message):
+        self.status=status
+        super().__init__(message)
+
+def api_errors(method):
+    @wraps(method)
+    def wrapped(self):
+        try:
+            if self.command in ('POST','PUT','DELETE'):
+                origin=self.headers.get('Origin')
+                if (self.headers.get('Sec-Fetch-Site')=='cross-site'
+                    or origin and urlparse(origin).netloc.lower()!=self.headers.get('Host','').lower()):
+                    raise RequestError(403,'不允许来自其他网站的写入请求')
+            return method(self)
+        except RequestError as e:
+            return self.send_json(e.status,{'error':str(e)})
+        except (ValueError,TypeError,AttributeError):
+            return self.send_json(400,{'error':'请求字段格式无效'})
+        except sqlite3.Error:
+            return self.send_json(503,{'error':'数据库暂时不可用，请稍后重试'})
+    return wrapped
 
 class Handler(SimpleHTTPRequestHandler):
     def log_message(self,fmt,*args):
@@ -115,9 +146,27 @@ class Handler(SimpleHTTPRequestHandler):
     def send_json(self,status,data):
         raw=json.dumps(data,ensure_ascii=False).encode(); self.send_response(status); self.send_header('Content-Type','application/json; charset=utf-8'); self.send_header('Cache-Control','no-store'); self.send_header('Content-Length',len(raw)); self.end_headers(); self.wfile.write(raw)
     def body(self):
-        size=int(self.headers.get('Content-Length','0'))
-        if size>2_000_000: raise ValueError('请求内容过大')
-        return json.loads(self.rfile.read(size) or b'{}')
+        if self.headers.get('Content-Type','').split(';',1)[0].strip().lower()!='application/json':
+            raise RequestError(415,'请求内容必须为 application/json')
+        try:size=int(self.headers.get('Content-Length','0'))
+        except ValueError:raise RequestError(400,'请求长度无效')
+        if size<0:raise RequestError(400,'请求长度无效')
+        if size>2_000_000:raise RequestError(413,'请求内容过大')
+        try:data=json.loads(self.rfile.read(size) or b'{}')
+        except (ValueError,UnicodeDecodeError):raise RequestError(400,'请求不是有效 JSON')
+        if not isinstance(data,dict):raise RequestError(400,'请求内容必须为 JSON 对象')
+        return data
+    def serve_static(self,head=False):
+        target=(DIST/(unquote(urlparse(self.path).path).lstrip('/') or 'index.html')).resolve()
+        if not target.is_relative_to(DIST.resolve()):return self.send_error(403)
+        if not target.exists() or target.is_dir():target=DIST/'index.html'
+        self.path='/'+str(target.relative_to(DIST)).replace('\\','/')
+        return super().do_HEAD() if head else super().do_GET()
+    def do_HEAD(self):
+        if urlparse(self.path).path.startswith('/api/'):
+            return self.send_error(405)
+        return self.serve_static(head=True)
+    @api_errors
     def do_GET(self):
         url=urlparse(self.path)
         if url.path=='/api/health': return self.send_json(200,{'ok':True,'database':'sqlite','gptConfigured':bool(load_gpt_config()['apiKey']),'time':datetime.now(timezone.utc).isoformat()})
@@ -138,7 +187,7 @@ class Handler(SimpleHTTPRequestHandler):
                 categories=[dict(r) for r in db.execute('SELECT category,COUNT(*) AS count FROM materials GROUP BY category ORDER BY count DESC')]
             return self.send_json(200,{'total':total,'bytes':size,'types':types,'categories':categories})
         if url.path=='/api/materials':
-            limit=min(int(parse_qs(url.query).get('limit',['100'])[0]),500)
+            limit=max(1,min(int(parse_qs(url.query).get('limit',['100'])[0]),500))
             with connect() as db:rows=[dict(r) for r in db.execute('SELECT * FROM materials ORDER BY modified DESC LIMIT ?',(limit,))]
             return self.send_json(200,rows)
         if url.path.startswith('/api/state/'):
@@ -153,18 +202,18 @@ class Handler(SimpleHTTPRequestHandler):
             for q in out:q['options']=json.loads(q['options']);q['verified']=bool(q['verified'])
             return self.send_json(200,out)
         if url.path.startswith('/api/'): return self.send_json(404,{'error':'接口不存在'})
-        target=(DIST/(url.path.lstrip('/') or 'index.html')).resolve()
-        if not target.is_relative_to(DIST.resolve()):return self.send_error(403)
-        if not target.exists() or target.is_dir():target=DIST/'index.html'
-        self.path='/'+str(target.relative_to(DIST)).replace('\\','/');return super().do_GET()
+        return self.serve_static()
+    @api_errors
     def do_PUT(self):
         url=urlparse(self.path)
         if not url.path.startswith('/api/state/'):return self.send_json(404,{'error':'接口不存在'})
         key=unquote(url.path[11:])
         if key not in ALLOWED:return self.send_json(404,{'error':'未知数据类型'})
         data=self.body()
+        if 'value' not in data:raise RequestError(400,'缺少 value 字段')
         with connect() as db:db.execute('INSERT INTO app_state(key,value,updated_at) VALUES(?,?,CURRENT_TIMESTAMP) ON CONFLICT(key) DO UPDATE SET value=excluded.value,updated_at=CURRENT_TIMESTAMP',(key,json.dumps(data.get('value'),ensure_ascii=False)))
         return self.send_json(200,{'ok':True,'key':key})
+    @api_errors
     def do_DELETE(self):
         url=urlparse(self.path)
         if not url.path.startswith('/api/questions/'):
@@ -178,6 +227,7 @@ class Handler(SimpleHTTPRequestHandler):
             if not row:return self.send_json(404,{'error':'题目不存在或已被删除'})
             db.execute('DELETE FROM questions WHERE id=?',(question_id,))
         return self.send_json(200,{'ok':True,'id':question_id})
+    @api_errors
     def do_POST(self):
         url=urlparse(self.path); data=self.body()
         if url.path=='/api/gpt/config':
@@ -216,6 +266,7 @@ class Handler(SimpleHTTPRequestHandler):
                 allowed=any(target==root.resolve() or root.resolve() in target.parents for root in MATERIAL_ROOTS)
                 if not allowed:return self.send_json(403,{'error':'只能打开学习资料目录中的文件'})
                 if not target.is_file():return self.send_json(404,{'error':'文件不存在'})
+                if target.suffix.lower() not in MATERIAL_EXTS:return self.send_json(403,{'error':'只能打开支持的学习资料文件'})
                 if hasattr(os,'startfile'):os.startfile(str(target))
                 else:return self.send_json(501,{'error':'当前系统不支持调用默认程序'})
                 return self.send_json(200,{'ok':True})
@@ -223,12 +274,14 @@ class Handler(SimpleHTTPRequestHandler):
         if url.path=='/api/questions':
             options=data.get('options')
             if (not str(data.get('topic','')).strip() or not str(data.get('stem','')).strip()
-                or not isinstance(options,list) or len(options)!=4 or any(not str(x).strip() for x in options)
-                or not isinstance(data.get('answer'),int) or data['answer'] not in range(4)
-                or not isinstance(data.get('year'),int) or not 2000<=data['year']<=2100
+                or not isinstance(data.get('topic'),str) or not isinstance(data.get('stem'),str)
+                or not isinstance(options,list) or len(options)!=4 or any(not isinstance(x,str) or not x.strip() for x in options)
+                or type(data.get('answer')) is not int or data['answer'] not in range(4)
+                or type(data.get('year')) is not int or not 2000<=data['year']<=2100
                 or data.get('season') not in ('上半年','下半年')
                 or data.get('paper_type') not in ('上午题','下午题','专项练习')
-                or not isinstance(data.get('question_no'),int) or data['question_no']<1):
+                or type(data.get('question_no')) is not int or data['question_no']<1
+                or not isinstance(data.get('source',''),str) or not isinstance(data.get('explanation',''),str)):
                 return self.send_json(400,{'error':'题目字段不完整或格式无效'})
             with connect() as db:cur=db.execute('INSERT INTO questions(topic,stem,options,answer,explanation,source,verified,year,season,paper_type,question_no) VALUES(?,?,?,?,?,?,?,?,?,?,?)',(data['topic'].strip(),data['stem'].strip(),json.dumps([str(x).strip() for x in options],ensure_ascii=False),data['answer'],data.get('explanation',''),data.get('source','用户手动添加'),1 if data.get('verified') else 0,data['year'],data['season'],data['paper_type'],data['question_no']))
             return self.send_json(201,{'ok':True,'id':cur.lastrowid})
